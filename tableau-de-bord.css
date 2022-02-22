@@ -1,0 +1,97 @@
+
+/* Style du titre principale de la section */
+.tdb-container h2{
+    font: normal normal bold 52px/60px Proxima Nova;
+    letter-spacing: 0.73px;
+}
+
+#user{
+    display: flex;
+}
+
+#user-circle{
+    width: 127px;
+    height: 127px;
+
+    background-color: #A0A0A0;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#user-circle p{
+    font: normal normal bold 60px/120px Noto Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+#pfp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+#Changer-la-photo{
+    font: normal normal 600 8px/11px Noto Sans;
+    letter-spacing: 0px;
+    margin-top: 8px;
+}
+
+#Changer-la-photo:hover{
+    
+   
+    text-decoration: none;
+}
+
+#user-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+#user-text p{
+    margin: 0px;
+    font: normal normal 600 16px/22px Noto Sans;
+}
+/* ////////////////////////////////////////////////////////// */
+#adherent{
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: #4525F2;
+    color: white;
+    border-radius: 100px;
+    font: normal normal 600 16px/22px Noto Sans
+}
+
+article{
+    /* text-align: justify; */
+}
+
+article h3 {
+    font: normal normal bold 24px/34px Noto Sans;
+letter-spacing: 0px;
+}
+
+article p {
+    font: normal normal 600 16px/22px Noto Sans;
+    letter-spacing: 0px;
+}
+
+#new-resa{
+    display: flex;
+    align-items: center;
+}
+
+#new-resa:hover{
+    text-decoration: none;
+}
+
+#new-resa img{
+    margin-right: 10px;
+}

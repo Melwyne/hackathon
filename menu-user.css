@@ -21,6 +21,10 @@
     text-transform: uppercase;
 }
 
+.menu a:hover{
+    text-decoration: underline;
+}
+
 #deco{
     font: normal normal normal 18px/24px Roboto;
 }
