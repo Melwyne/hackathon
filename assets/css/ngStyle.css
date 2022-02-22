@@ -1,0 +1,59 @@
+body {
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100vh;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.nav-social {
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-social li {
+    text-decoration: none;
+}
+
+.btn-primary {
+    border-radius: 150px!important;
+}
+
+.btn-light {
+    border-radius: 150px!important;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.big-title {
+    font-size: 60px;
+}
+
+.bg-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 595px;
+    background-color: rgba(128, 128, 128, 0.38);
+    background-position: cover;
+    background-repeat: no-repeat;
+    z-index: index -1;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
