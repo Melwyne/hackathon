@@ -1,11 +1,25 @@
-h2{
+.headerEvents{
+    font-weight: bold;
+    font-size: 50px;
+    color: blue;
+}
+.introEvents{
+    width: 400px;
+    text-align: center;
+    margin-top: 10px;
+}
+.sectionEvents{
+    padding: 20px 0;
+}
+.titleEvents{
     /*Je centre mon titre au milieu de la page et lui met des marges haut-bas*/
     text-align: center;
-    margin: 10px auto;
+    margin: 15px auto;
     /*Bordure en bas du titre*/
     border-bottom: solid 1px grey;
     /*taille au titre*/
-    width: 250px;
+    width: 290px;
+    padding-bottom: 3px;
 }
 /*class qui englobe tous mes évènements*/
 .events{
@@ -19,7 +33,7 @@ h2{
     margin: 0 auto;
     width: 1100px;
 }
-img{
+.events img{
     /*taille à toutes mes img*/
     width: 344px;
 }
@@ -32,8 +46,10 @@ img{
 /*Première ligne en couleur*/
 .eventsInfo > span:nth-child(1){
     color: blue;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
-h3{
+.eventsInfo h3{
     /*taille à mon titre*/
     font-size: 14px;
     /*bordure en bas*/
@@ -43,7 +59,12 @@ h3{
 /*afficher un pointeur sur chaque article*/
 .flexColumn{
     cursor: pointer;
+    border: solid 1px transparent;
 }
+.events > article:hover{
+    border: solid 1px black;
+}
+
 /*réduire taille de ma class en fonction des tailles des écrans*/
 @media screen and (max-width: 1100px){
     .events{
