@@ -151,7 +151,7 @@ form > input:nth-child(7){
     border-bottom: solid 3px rgb(235, 235, 235);
     /*donne une taille et une couleur à ma scrollbar, permet de la personnaliser*/
     scrollbar-width: thin;
-    scrollbar-color: blue rgb(235, 235, 235);
+    scrollbar-color: blue rgb(235, 235, 235); 
 }
 .charteDocument > h4, .charteDocument > h3{
     margin: 10px 0;
