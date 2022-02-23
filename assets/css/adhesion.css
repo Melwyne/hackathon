@@ -1,4 +1,16 @@
 /*----------------------------------------------Formulaire d'adhésion-----------------------------------------------------*/
+.headerAdhesion{
+    width: 100%;
+    height: 128px;
+}
+.nav-link{
+    color: rgb(167, 167, 167)!important;
+}
+.nav-link:hover{
+    color: blue!important;
+}
+
+/*----------------------------------------------Formulaire d'adhésion-----------------------------------------------------*/
 .adhesion{
     width: 70%;
     margin: 10px auto;
@@ -14,9 +26,9 @@
     justify-content: space-evenly;
     align-items: center;
 }
-h2{
+.adhesionPage > h2{
     font-size: 40px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 /*formulaire*/
 .formAdhesion{
@@ -61,11 +73,12 @@ form > input:nth-child(7){
     margin-left: 3px;
 }
 .charteRead{
+    font-size: 14px;
     color: blue;
 }
 /*soulignement au survol de la souris*/
 .charteRead:hover{
-    text-decoration: underline;
+    text-decoration: underline!important;
 }
 /*obligé de le mettre en block pour lui donner une taille car c'est un inline normalement */
 .submitFormAdhesion{
@@ -81,7 +94,7 @@ form > input:nth-child(7){
     margin: 4px auto;
     /*changement du pointer pour montrer que c'est cliquable*/
     cursor: pointer;
-    padding-top: 6px;
+    padding-top: 3px;
 }
 /*changement d'état au survol*/
 .submitFormAdhesion:hover{
@@ -108,7 +121,7 @@ form > input:nth-child(7){
         width: 100%;
     }
     /*changement de couleur sur ecran plus petit*/
-    h2{
+    .adhesionPage > h2{
         color: blue;
     }
     /*plus de border radisu et taille à 100% pour la boite parent*/
@@ -160,7 +173,6 @@ form > input:nth-child(7){
     height: 40px;
     border-radius: 50px;
     background-color: rgb(235, 235, 235);
-    padding: 5px;
     text-align: center;
     font-size: 25px;
     /*permet de le placer où je veux, position relative mise sur le parent*/
@@ -222,7 +234,7 @@ form > input:nth-child(7){
     font-weight: bold;
     margin: 5px;
 }
-img{
+.imgAdh{
     width: 700px;
 }
 .boxMsgAdhesion{
@@ -264,7 +276,7 @@ img{
     margin: 5px;
     /*changement de ma souris sur lélément*/
     cursor: pointer;
-    padding-top: 6px;
+    padding-top: 3px;
     text-align: center;
 }
 /*changement d'état au survol*/
@@ -308,7 +320,7 @@ img{
 }
 /*disparition de plusieurs éléments à max 700px d'écran*/
 @media screen and (max-width: 700px){
-    img, .connectProposition, .boxMsgAdhesion > span:nth-child(3){
+    .imgAdh, .connectProposition, .boxMsgAdhesion > span:nth-child(3){
         display: none;
     }
     .msgAdhesion, .btnAccueilAdhesion{
