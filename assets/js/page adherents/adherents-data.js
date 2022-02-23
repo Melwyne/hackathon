@@ -1,5 +1,5 @@
 export const adherents =[{
-        photo: "../img/photos adherents/Christelle lagouarde.jpg",
+        photo: "./assets/img/photos adherents/Christelle lagouarde.jpg",
         nom: "LAGOUARDE",
         prenom: `Christelle`,
         description: `Secrétaire indépendante, je soutiens les petites et moyennes entreprises dans la gestion administrative et commerciale, de manière ponctuelle ou régulière, sur site ou à mon domicile.<br><br> 
@@ -9,7 +9,7 @@ export const adherents =[{
         siteWeb:`https://medocsecretr.wixsite.com/medocsecretr`,
     },
     {
-        photo: "../img/photos adherents/Christian ESCOUTELOUP.jpg",
+        photo: "./assets/img/photos adherents/Christian ESCOUTELOUP.jpg",
         nom: "ESCOUTELOUP",
         prenom: `Christian`,
         description: `Conseiller indépendant en immobilier, je mets au service de mes clients vendeurs ou acquéreurs ma connaissance du marché de l'immobilier, ma disponibilité ainsi que ma réactivité et toute la force du groupe IAD.<br><br>
@@ -19,7 +19,7 @@ export const adherents =[{
         siteWeb:``,
     },
     {
-        photo: "../img/photos adherents/Elodie Vezin.jpg",
+        photo: "./assets/img/photos adherents/Elodie Vezin.jpg",
         nom: "VEZIN",
         prenom: `Elodie`,
         description: ` J'utilise le magnétisme pour soigner les maux du corps et de l'esprit.<br><br> Je propose également des tirages de cartes pour une guidance(non une voyance).<br><br>La guidance vous permet de rester libre de votre chemin en vous donnant des pistes pour avancer sereinement. `,
@@ -28,7 +28,7 @@ export const adherents =[{
         siteWeb:``,
     },
     {
-        photo: "../img/photos adherents/Celine ille.jpg",
+        photo: "./assets/img/photos adherents/Celine ille.jpg",
         nom: "ILLE",
         prenom: `Celine`,
         description: `Artisan couturière sur la commune de Castelnau, j'ai le plaisir de vous accueillir sur rdv afin de discuter de vos projets de couture ou de retouches/réparations de vêtements. `,
@@ -37,7 +37,7 @@ export const adherents =[{
         siteWeb:``,
     },
     {
-        photo: "../img/photos adherents/Aurelie Maurin test.jpg",
+        photo: "./assets/img/photos adherents/Aurelie Maurin test.jpg",
         nom: "MAURIN BERGEON ",
         prenom: `Aurélie `,
         description: `"Vous donner les clés pour vous permettre de reprendre sereinement les rênes de votre vie"<br><br>
@@ -50,7 +50,7 @@ export const adherents =[{
         
     },
     {
-        photo: "../img/photos adherents/Virginie Mangel.jpg",
+        photo: "./assets/img/photos adherents/Virginie Mangel.jpg",
         nom: "Mangel",
         prenom: `Virginie  `,
         description: `Thérapeute énergéticienne et passionnée par le Monde Végétal, je suis
@@ -64,7 +64,7 @@ export const adherents =[{
         
     },
     {
-        photo: "../img/photos adherents/Blanchain Christophe.jpg",
+        photo: "./assets/img/photos adherents/Blanchain Christophe.jpg",
         nom: "Blanchain",
         prenom: `Christophe `,
         description: `Le spécialiste de la formation à l'habilitation électrique de la Nouvelle Aquitaine.<br><br>
@@ -76,7 +76,7 @@ export const adherents =[{
         
     },
     {
-        photo: "../img/photos adherents/Carole MIGNARD.jpg",
+        photo: "./assets/img/photos adherents/Carole MIGNARD.jpg",
         nom: "MIGNARD",
         prenom: `Carole`,
         description: `Community manager et formatrice, j'accompagne les petites entreprises et associations à communiquer sur les réseaux sociaux.`,
@@ -87,7 +87,7 @@ export const adherents =[{
     },
     
     {
-        photo: "../img/photos adherents/Marie-Hélène BOISSEAU.jpg",
+        photo: "./assets/img/photos adherents/Marie-Hélène BOISSEAU.jpg",
         nom: "BOISSEAU",
         prenom: `Marie-Hélène`,
         description: `Professionnelle de l’écrit, je vous accompagne dans vos projets rédactionnels (contenu de site internet, portraits, présentations, brochures, présence sur les réseaux sociaux, etc.) et j’écris également pour le Journal du Médoc.`,
@@ -97,7 +97,7 @@ export const adherents =[{
         
     },
     {
-        photo: "../img/photos adherents/Candice RABAUD.jpg",
+        photo: "./assets/img/photos adherents/Candice RABAUD.jpg",
         nom: "RABAUD",
         prenom: `Candice `,
         description: `Votre photographe, Candice, de Paul & Zo Photography, vous accompagne pour la réalisation de vos plus belles images. `,
@@ -107,7 +107,7 @@ export const adherents =[{
         
     },
     {
-        photo: "../img/photos adherents/Helene LAURENT.jpg",
+        photo: "./assets/img/photos adherents/Helene LAURENT.jpg",
         nom: "LAURENT",
         prenom: `Helene `,
         description: `Tombée dans la marmite de la pédagogie à la naissance, j’ai consacré ma vie professionnelle à l’accompagnement d’enfants et d’ados mis à mal dans le système scolaire. `,
@@ -117,7 +117,7 @@ export const adherents =[{
         
     },
     {
-        photo: "../img/photos adherents/Caroline BERTHEUX.jpg",
+        photo: "./assets/img/photos adherents/Caroline BERTHEUX.jpg",
         nom: "BERTHEUX",
         prenom: `Caroline `,
         description: `Je suis accompagnante périnatale (ou doula) ainsi qu’instructrice en massage bébé.
@@ -128,7 +128,7 @@ export const adherents =[{
         
     },
     {
-        photo: "../img/photos adherents/Florence ALPHONSE.jpg",
+        photo: "./assets/img/photos adherents/Florence ALPHONSE.jpg",
         nom: "ALPHONSE",
         prenom: `Florence `,
         description: `Mes objectifs…Vous faire réussir...Comment ?<br><br>
@@ -142,7 +142,7 @@ export const adherents =[{
     },
     
     {
-        photo: "../img/photos adherents/Hélène BOURREAU.jpg",
+        photo: "./assets/img/photos adherents/Hélène BOURREAU.jpg",
         nom: "BOURREAU",
         prenom: `Hélène`,
         description: `Je suis une dé-tricoteuse de nœuds, tisseuse de liens, amoureuse de l'Humain !
@@ -155,7 +155,7 @@ export const adherents =[{
     },
     
     {
-        photo: "../img/photos adherents/Sophie BERTONE POMMIER.jpg",
+        photo: "./assets/img/photos adherents/Sophie BERTONE POMMIER.jpg",
         nom: "BERTONE POMMIER",
         prenom: `Sophie`,
         description: `SB Mes Docs, est organisme de formation professionnelle continue en inter ou en intra-entreprise. Les formations tenues sont adaptées et réalisées par des formateurs professionnels`,
@@ -165,7 +165,7 @@ export const adherents =[{
         
     },
     {
-        photo: "../img/photos adherents/Amelie EGON.jpg",
+        photo: "./assets/img/photos adherents/Amelie EGON.jpg",
         nom: "EGON",
         prenom: `melie`,
         description: `Je suis Kinésiologue, la kinésiologie est une technique qui favorise le bien-être physique, mental et social. `,
@@ -175,7 +175,7 @@ export const adherents =[{
         
     },
     {
-        photo: "../img/photos adherents/Pierrine GODELIER.jpg",
+        photo: "./assets/img/photos adherents/Pierrine GODELIER.jpg",
         nom: "GODELIER",
         prenom: `Pierrine`,
         description: `Je suis courtière en travaux, gestionnaire de projet de rénovation habitat, commerces, bureaux. Je vous accompagne lors de la réalisation et la réussite de vos travaux. `,

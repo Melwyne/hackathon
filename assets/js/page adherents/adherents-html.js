@@ -13,10 +13,10 @@ for(let i=0; i < adherents.length ; i++){
 </div>
 
 <!-- The Modal -->
-<div id="myModal-${i}" class="modal display-none">
+<div id="myModal-${i}" class="modal-sam display-none">
 
 <!-- Modal content -->
-<div class="modal-content ">
+<div class="modal-sam-content ">
     <span id=closeMod-${i} class="close">&times;</span>
     <div id="text-wrapper">
         <h2>${adherents[i].prenom} ${adherents[i].nom}</h2>
@@ -30,9 +30,9 @@ for(let i=0; i < adherents.length ; i++){
         <p>🌐 ${adherents[i].siteWeb}</p> 
         <h3>Réseaux sociaux:</h3>
         <div id="social-links">
-            <a href=""><img src="../img/img footer/facebook.png" alt="Logo facebook de L’Escale Tiers-Lieu"></a>
-            <a href=""><img src="../img/img footer/linkedin.png" alt="Logo linkedin de L’Escale Tiers-Lieu"></a>
-            <a href=""><img src="../img/img footer/instagram.png" alt="Logo instagram de L’Escale Tiers-Lieu"></a>
+            <a href=""><img src="./assets/img/img footer/facebook.png" alt="Logo facebook de L’Escale Tiers-Lieu"></a>
+            <a href=""><img src="./assets/img/img footer/linkedin.png" alt="Logo linkedin de L’Escale Tiers-Lieu"></a>
+            <a href=""><img src="./assets/img/img footer/instagram.png" alt="Logo instagram de L’Escale Tiers-Lieu"></a>
         </div>
 
     </div>
