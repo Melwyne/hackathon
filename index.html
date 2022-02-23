@@ -19,17 +19,17 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark justify-content-lg-between align-content-center fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-between align-content-center fixed-top">
             <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo.png" alt="l'escale Tiers-lieu Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center align-content-center" id="navbarNav">
                 <ul class="navbar-nav mx-3">
-                    <li class="nav-item active">
+                    <li class="nav-item active ">
                         <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item text-black">
                         <a class="nav-link" href="prestations.html">Prestations</a>
                     </li>
                     <li class="nav-item">
@@ -38,7 +38,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-
+                    <li class="nav-item sr-only-focusable">
+                        <a class="nav-link disabled" href="#">Agenda</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav align-content-center mx-3">
                     <li class="nav-item">
@@ -51,47 +53,52 @@
                         <a class="nav-link" href=""><i class="fa-brands fa-linkedin-in"></i></a>
                     </li>
                 </ul>
-                <div>
-                    <ul class="navbar-nav mx-3">
-                        <li class="btn btn-light nav-item mx-2">Se Connecter</li>
-                        <li class="btn btn-primary nav-item">Adhérer</li>
+                <div id="connection">
+                    <ul class="navbar-nav mx-3" id="list-connect">
+                        <li class="btn btn-light nav-item mx-2 text-center justify-content-center" id="login"> <a class="nav-link seConnecter" href="# ">Se Connecter</a></li>
+                        <li class="btn btn-primary nav-item " id="adhesion">
+                            <a class="nav-link adherer " href="https://www.helloasso.com/associations/l-escale-tiers-lieu/adhesions/adhesion-2022 ">Adhérer</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="bg-header">
-            <div class="caption">
-                <div class="big-title upper">
-                    <h1>Besoin d'un bureau ? </h1>
-                </div>
-                <div class="sub-big-title d-flex justify-content-center flex-column align-content-center">
-                    <p>Reservez une salle dès maintenant grâce à la reservation en ligne.</p>
-                    <p>Accessible dès maintenat du lundi au dimanche</p>
-                </div>
-                <div class="btn btn-primary upper justify-content-center">Reserver un espace de Coworking !</div>
+        <div class="bg-header ">
+
+        </div>
+        <div class="caption ">
+            <div class="big-title upper ">
+                <h1>Besoin d'un bureau ? </h1>
+            </div>
+            <div class="sub-big-title d-flex justify-content-center flex-column align-content-center ">
+                <p>Reservez une salle dès maintenant grâce à la reservation en ligne.</p>
+                <p>Accessible dès maintenat du lundi au dimanche</p>
+            </div>
+            <div class="btn btn-primary upper justify-content-center p-3 ">
+                <a class="list-group-item-action text-white " href="assets/html/reservations.html ">Reserver un espace de Coworking !</a>
             </div>
         </div>
     </header>
 
 
     <footer>
-        <section id="footer-main">
+        <section id="footer-main ">
             <article>
                 <h2>L’Escale Tiers-Lieu </h2>
                 <hr>
-                <div class="text-wrapper">
-                    <img src="assets/img/img footer/map-pin.png" alt="icone d'une épingle de carte routiére">
+                <div class="text-wrapper ">
+                    <img src="assets/img/img footer/map-pin.png " alt="icone d 'une épingle de carte routiére">
                     <div>
                         <p> 1 Avenue Pasteur </p>
                         <p>33480 CASTELNAU-DE-MEDOC</p>
                     </div>
                 </div>
                 <div class="text-wrapper">
-                    <img src="assets/img/img footer/phone.png" alt="icone d'un téléphone">
+                    <img src="assets/img/img footer/phone.png" alt="icone d'un téléphone ">
                     <p>05 57 09 11 40</p>
                 </div>
-                <div class="text-wrapper">
-                    <img src="assets/img/img footer/globe.png" alt="icone d'un globe">
+                <div class="text-wrapper ">
+                    <img src="assets/img/img footer/globe.png " alt="icone d 'un globe">
                     <p>contact@lescale-tierlieu.fr</p>
                 </div>
                 <hr>
