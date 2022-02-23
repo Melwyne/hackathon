@@ -2,35 +2,37 @@
 ul {
   list-style-type: none;
 }
-/* body { */
-/* box-sizing: border-box;
-  width: 100%; */
-/* } */
+body {
+  box-sizing: border-box;
+  width: 100%;
+}
 
 /* --------------------------------Section 2------------------------------------- */
 .contact_display {
   display: flex;
-  top: 142px;
-  left: 135px;
   width: 80%;
-  height: 500px;
   margin: 0 auto;
 }
 
-.contact_contact {
+.contact_display {
   box-shadow: 8px 16px 32px #0000001a;
   border-radius: 16px;
+  margin-top: 130px;
+  margin-bottom: 50px;
 }
 
 .contact_align {
+  padding-top: 35px;
+  padding-bottom: 70px;
   margin-left: 50px;
 }
 
 .text_contact {
   font-size: 25px;
+  padding-bottom: 25px;
 }
 .contact_position {
-  margin-top: 50px;
+  margin-top: 10%;
   margin-left: 45px;
 }
 .set_input {
@@ -52,8 +54,13 @@ ul {
   margin: 15px;
   border-radius: 50px;
   font-size: 15px;
-  background: #4525f2;
+  background: #017aff;
   color: white;
+  line-height: 1.5;
+  transition: all 0.4s;
+}
+.form_submit:hover {
+  background: #0062cc;
 }
 .info_position {
   margin-bottom: 15px;
@@ -69,12 +76,14 @@ ul {
   background: #f8f8f8;
   background-size: cover;
   width: 100%;
+  padding-bottom: 70px;
   /* height: 768px; */
 }
 .text_section2 {
   font-size: 25px;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 50px;
+  padding-bottom: 25px;
 }
 
 .containt_map {
@@ -94,14 +103,52 @@ ul {
 .ifram_contact {
   width: 100%;
   border-radius: 16px;
+  box-shadow: 8px 16px 32px #0000001a;
 }
-
+/* -----------------------------------------footer---------------------------------------------------- */
 /* -------------------------mediaQueries------------------- */
 
 @media screen and (max-device-width: 415px) {
   .contact_display {
     display: block;
-    height: 750px;
-    width: 70%;
+    height: auto;
+    width: 90%;
+    box-shadow: none;
   }
+  .contact_align {
+    padding-bottom: 0px;
+  }
+  .text_contact {
+    text-align: center;
+  }
+  .contact_position {
+    display: none;
+  }
+  .contact_display {
+    margin-top: 85px;
+  }
+
+  .champ-input {
+    padding-right: 90px;
+  }
+  #textarea_message {
+    width: 90%;
+  }
+  .form_submit {
+    align-items: center;
+  }
+  .mq_button {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+  }
+  .ifram_contact {
+    border-radius: 8px;
+  }
+  #footer-main {
+    display: none;
+  }
+  /* #section2 {
+    background: none;
+  } */
 }

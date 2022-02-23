@@ -4,80 +4,191 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
     <meta
       name="description"
-      content="Page de contate de l'association L'Escale
-    tiers-lieu."
+      content="Page de contate de l'association L'Escale tiers-lieu."
     />
+    <title>Contact</title>
+    <!-----------------------------navbar links---------------------------------- -->
+    <link rel="stylesheet" href="../css/ngStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ------------------------------footer links------------------------------------------ -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="../css/sam-footer.css" />
+    <!-- --------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="../css/contact_style.css" />
   </head>
   <body>
-    <head></head>
-    <main>
-      <section class="contact_display">
-        <div class="contact_align">
-          <h2 class="text_contact">Contactez nous!</h2>
-          <form class="form">
-            <div class="set_input">
-              <input
-                type="text"
-                name="name"
-                id="input_name"
-                class="champ-input"
-                placeholder="Votre nom*"
-                required
-              />
-            </div>
-            <div class="set_input">
-              <input
-                type="email"
-                name="email"
-                id="input_email"
-                class="champ-input"
-                placeholder="Votre email*"
-                required
-              />
-            </div>
-            <div>
-              <textarea
-                name="message"
-                id="textarea_message"
-                cols="40"
-                rows="10"
-                class="champ-input"
-                placeholder="Votre message*"
-                required
-              ></textarea>
-            </div>
-            <div>
-              <button class="form_submit" type="submit">Envoyer</button>
-            </div>
-          </form>
-        </div>
-        <div class="contact_position">
-          <ul>
-            <li class="info_position">Adresse:</li>
-            <li>L'ESCALE TIERS-LIEU</li>
-            <li>1 avenue Paster,</li>
-            <li>33500 Castelnau-Sur-Medoc</li>
-          </ul>
-          <ul>
-            <li class="info_position">Téléphone</li>
-            <li>
-              <a class="info_contact" href="tel:+33557091140">05 57 09 11 40</a>
-            </li>
-          </ul>
-          <ul>
-            <li class="info_position">E-mail:</li>
-            <li>
-              <a class="info_contact" href="mailto:contact@lescale-tierslieu.fr"
-                >contact@lescale-tierslieu.fr</a
+    <head>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark justify-content-lg-between align-content-center fixed-top"
+      >
+        <a class="navbar-brand" href="index.html"
+          ><img
+            class="logo"
+            src="../img/logo.png"
+            alt="l'escale Tiers-lieu Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center align-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav mx-3">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Accueil <span class="sr-only">(current)</span></a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prestations.html">Prestations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Evènements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
+          <ul class="navbar-nav align-content-center mx-3">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.facebook.com/escale.tierslieu"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
+          <div>
+            <ul class="navbar-nav mx-3">
+              <li class="btn btn-light nav-item mx-2">Se Connecter</li>
+              <li class="btn btn-primary nav-item">Adhérer</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </head>
+    <main>
+      <!-- -------------------------------------------------Section 1------------------------------------------------------------- -->
+      <section>
+        <div class="contact_display">
+          <div class="contact_align">
+            <h2 class="text_contact">Contactez nous!</h2>
+            <form class="form">
+              <div class="set_input">
+                <input
+                  type="text"
+                  name="name"
+                  id="input_name"
+                  class="champ-input"
+                  placeholder="Votre nom*"
+                  required
+                />
+              </div>
+              <div class="set_input">
+                <input
+                  type="email"
+                  name="email"
+                  id="input_email"
+                  class="champ-input"
+                  placeholder="Votre email*"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  name="message"
+                  id="textarea_message"
+                  cols="40"
+                  rows="6"
+                  class="champ-input"
+                  placeholder="Votre message*"
+                  required
+                ></textarea>
+              </div>
+              <div class="mq_button">
+                <button class="form_submit" type="submit">Envoyer</button>
+              </div>
+            </form>
+          </div>
+          <div class="contact_position">
+            <ul>
+              <li class="info_position">Adresse:</li>
+              <li>L'ESCALE TIERS-LIEU</li>
+              <li>1 avenue Paster,</li>
+              <li>33500 Castelnau-Sur-Medoc</li>
+            </ul>
+            <ul>
+              <li class="info_position">Téléphone</li>
+              <li>
+                <a class="info_contact" href="tel:+33557091140"
+                  >05 57 09 11 40</a
+                >
+              </li>
+            </ul>
+            <ul>
+              <li class="info_position">E-mail:</li>
+              <li>
+                <a
+                  class="info_contact"
+                  href="mailto:contact@lescale-tierslieu.fr"
+                  >contact@lescale-tierslieu.fr</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
+      <!-- --------------------------------------------------Section 2------------------------------------------------------- -->
       <section id="section2">
         <div>
           <h3 class="text_section2">Nous sommes ici !</h3>
@@ -95,6 +206,66 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section id="footer-main">
+        <article>
+          <h2>L’Escale Tiers-Lieu</h2>
+          <hr />
+          <div class="text-wrapper">
+            <img
+              src="../img/img footer/map-pin.png"
+              alt="icone d'une épingle de carte routiére"
+            />
+            <div>
+              <p>1 Avenue Pasteur</p>
+              <p>33480 CASTELNAU-DE-MEDOC</p>
+            </div>
+          </div>
+          <div class="text-wrapper">
+            <img src="../img/img footer/phone.png" alt="icone d'un téléphone" />
+            <p>05 57 09 11 40</p>
+          </div>
+          <div class="text-wrapper">
+            <img src="../img/img footer/globe.png" alt="icone d'un globe" />
+            <p>contact@lescale-tierlieu.fr</p>
+          </div>
+          <hr />
+          <div id="social-links">
+            <a href=""
+              ><img
+                src="../img/img footer/facebook.png"
+                alt="Logo facebook de L’Escale Tiers-Lieu"
+            /></a>
+            <a href=""
+              ><img
+                src="../img/img footer/linkedin.png"
+                alt="Logo linkedin de L’Escale Tiers-Lieu"
+            /></a>
+            <a href=""
+              ><img
+                src="../img/img footer/instagram.png"
+                alt="Logo instagram de L’Escale Tiers-Lieu"
+            /></a>
+          </div>
+        </article>
+        <article id="site-map">
+          <h2>Site map</h2>
+          <a>Acceuil</a>
+          <a>Presentation</a>
+          <a>Agenda</a>
+          <a>contact</a>
+        </article>
+      </section>
+      <section id="footer-footer">
+        <div>
+          <p>© 2022 L'Escale Tout droits réservés.</p>
+        </div>
+        <div>
+          <a id="ml">Mentions légales</a>
+          <a>Conditions générales d'utilisations</a>
+        </div>
+      </section>
+    </footer>
+    <script src="../js/contact/contact.js"></script>
   </body>
 </html>
