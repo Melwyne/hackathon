@@ -52,10 +52,10 @@
 }
 
 /* The Modal (background) */
-.modal {
+.modal-sam {
    
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 5000; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -66,7 +66,7 @@
   }
   
   /* Modal Content/Box */
-  .modal-content {
+  .modal-sam-content{
       position: relative;
     display: flex;
     justify-content: space-between;
@@ -81,7 +81,7 @@
     color: black;
   }
 
-  .modal-content img{
+  .modal-sam-content img{
       /* width: 50%; */
       height: 100%;
       border-radius: 0 10px 10px 0;
@@ -133,7 +133,7 @@
     flex-direction: column;
     align-items: center;
     width: 200px;
-
+    margin-inline: 20px;
 }
 
 
@@ -174,7 +174,7 @@
     height: 70vh;
   }
 
-  .modal-content{
+  .modal-sam-content{
     flex-direction: column-reverse;
     height: 100%;
     position: relative;
@@ -193,7 +193,7 @@
     width: 100%;
   }
 
-  .modal-content img {
+  .modal-sam-content img {
     display: none;
   }
 
