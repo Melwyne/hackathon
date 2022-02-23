@@ -1,9 +1,3 @@
-/*------J'enlève les bordures sur toute la page*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 h2{
     /*Je centre mon titre au milieu de la page et lui met des marges haut-bas*/
     text-align: center;

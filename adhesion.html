@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhésion l'Escale</title>
+    <meta name="description" content="Adhésion permettant de pouvoir réserver des salles sur le site de l'Escale.">
+    <link rel="stylesheet" href="adhesion.css">
+    <link rel="stylesheet" href="librairie.css">
+</head>
+<body>
+    <main>
+        <section class="adhesion flexColumn">
+            <h2>ADHESION</h2>
+            <form action="" method="post" class="formAdhesion">
+                <span>Informations personnelles</span>
+                <label for="name"></label>
+                <input type="text" id="name" name="user_name" placeholder="Nom">
+                <label for="lastName"></label>
+                <input type="text" id="lastName" name="lastName" placeholder="Prénom">
+                <label for="adresse"></label>
+                <input type="text" id="adresse" name="adresse" placeholder="Adresse">
+                <label for="cityCode"></label>
+                <input type="text" id="cityCode" name="cityCode" placeholder="Code postal">
+                <label for="city"></label>
+                <input type="text" id="city" name="city" placeholder="Ville">
+                <label for="mail"></label>
+                <input type="email" id="mail" name="mail" placeholder="E-mail">
+                <label for="phone"></label>
+                <input type="phone" id="phone" name="phone" placeholder="Numéro de téléphone">
+
+                <span>Paiement</span>                
+                <label for="cardName"></label>
+                <input type="text" id="cardName" name="cardName" placeholder="Nom du titulaire de la carte">
+                <label for="cardNumber"></label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="Numéro de carte">
+                <label for="expiration"></label>
+                <input type="date" id="expiration" name="expiration" placeholder="Expiration" class="expiration">
+                <label for="crypto"></label>
+                <input type="text" id="crypto" name="crypto" placeholder="Cryptogramme" class="crypto">
+                <div class="checkAdhesion">
+                    <input type="checkbox" id="checkbox" name="checkbox"> 
+                    <label for="checkbox" class="charte">J'accepte la charte de l'association. <a href="#" class="charteRead">Lire la charte</a></label>
+                </div>
+                <div class="submitAdhesion">
+                    <a href="adhesionCheck.html" class="submitFormAdhesion">ENVOYER</a>
+                </div>
+               
+            </form>
+        </section>
+    </main>
+</body>
+</html>
