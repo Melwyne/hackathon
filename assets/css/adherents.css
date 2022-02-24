@@ -7,7 +7,7 @@
   /* text-align: center; */
 
   padding: 100px 170px;
-  background-color:#4525F2 ;
+  background-color:#41AAC1 ;
   color: white;
 
 
@@ -30,10 +30,14 @@
 
 /* Les style du "adherents-wrapper"> */
 .adherents-wrapper{
-  height: 240px;
-  overflow: auto;
+  
   scrollbar-width: thin; 
   justify-content: space-evenly; 
+}
+
+.masquer{
+  height: 240px;
+  overflow: hidden;
 }
 
 
@@ -121,11 +125,19 @@
     width: 100%;
     border-radius: 50%;
     pointer-events: all;
+
+    -webkit-transform: scale(1);
+	  transform: scale(1);
+	  -webkit-transition: .3s ease-in-out;
+	  transition: .3s ease-in-out;
 }  
 
 .vignette img:hover{
-    filter: saturate(.7);
+    filter: saturate(.5);
     cursor: pointer;
+
+    -webkit-transform: scale(1.3);
+	  transform: scale(0.9);
 }
 
 .vignette{
@@ -156,6 +168,25 @@
     width: 50px;
 }
 
+/* styles du bouton voir tout */
+
+#voir-tout{
+  margin-top: 50px;
+
+  border: none;
+  border-radius: 100px;
+  padding: 10px 30px;
+
+  background-color: #F2F2F1;
+  color: #41AAC1;
+}
+
+#voir-tout:hover{
+  background-color: #41AAC1;
+  color: #F2F2F1;
+  cursor: pointer;
+  border: white 1px solid;
+}
 
 /*
 ================================================
@@ -170,9 +201,11 @@
     padding: 20px;
   }
 
-  .adherents-wrapper {
-    height: 70vh;
+  .masquer{
+    height: 480px;
+    overflow: hidden;
   }
+  
 
   .modal-sam-content{
     flex-direction: column-reverse;
