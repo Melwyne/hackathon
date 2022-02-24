@@ -1,8 +1,3 @@
-@font-face {
-    font-family: Roboto, sans-serif;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap')
-}
-
 
 body {
     box-sizing: border-box;
@@ -101,11 +96,7 @@ body {
  *{
     color: #0D0E0F!important;
 }
-:root{
-    --dark: #0D0E0F;
-    --light: #F2F2F1;
-    --primaire: #41AAC1;
-}
+
 body{
     background-color: var(--light)!important;
 }
@@ -137,6 +128,20 @@ body{
 }
 .spaceStyle > div{
     margin: 5px;
+}
+.colorVar{
+    color: var(--primaire)!important;
+}
+.alignLegend{
+    text-align: center;
+}
+.styleIconMateriel{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light);
+    padding-top: 9px;
+    margin: 0 auto;
 }
 @media screen and (max-width: 750px){
     .dNoneEspace{
