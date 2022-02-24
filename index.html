@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="connexionHeader">
         <nav class="navbar navbar-expand-lg navbar-light justify-content-center align-content-center fixed-top">
             <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo.png" alt="l'escale Tiers-lieu Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,13 +31,13 @@
                         <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item text-black">
-                        <a class="nav-link" href="prestations.html">Prestations</a>
+                        <a class="nav-link" href="assets/html/prestations.html">Prestations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events.html">Evènements</a>
+                        <a class="nav-link" href="assets/html/events.html">Evènements</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./assets/html/contact.html">Contact</a>
+                        <a class="nav-link" href="assets/html/contact.html">Contact</a>
                     </li>
                     <li class="nav-item sr-only-focusable">
                         <a class="nav-link disabled" href="#">Agenda</a>
@@ -58,7 +58,7 @@
                     <ul class="navbar-nav mx-3" id="list-connect">
                         <li class="btn btn-light nav-item mx-2 my-2  text-center justify-content-center" id="login"> <a class="nav-link seConnecter" href="# ">Se Connecter</a></li>
                         <li class="btn btn-primary nav-item mx-2 my-2 colorOfficiel" id="adhesion">
-                            <a class="nav-link adherer" href="https://www.helloasso.com/associations/l-escale-tiers-lieu/adhesions/adhesion-2022 " target="_blank">Adhérer</a>
+                            <a class="nav-link adherer cWhite" href="assets/html/adhesion.html" target="_blank">Adhérer</a>
                         </li>
                     </ul>
                 </div>
@@ -76,13 +76,13 @@
                 <p>Accessible dès maintenat du lundi au dimanche</p>
             </div>
             <div class="btn btn-primary upper justify-content-center p-3 colorOfficiel">
-                <a class="list list-group list-group-item-action-primary text-white " href="assets/html/reservations.html ">Reserver maintenant !</a>
+                <a class="list list-group list-group-item-action-primary text-white" href="assets/html/reservations.html ">Reserver maintenant !</a>
             </div>
         </div>
     </header>
-    <main>
+    <main id="backgroundOfficiel">
         <div class="container mt-5">
-            <div class="row line-red p-5">
+            <div class="row line-red p-5" id="missionAssociation">
                 <div class="col-lg-6 sm-12">
                     <h2 class="h1">L'association</h2>
                     <div class="presentation mt-5">
@@ -99,11 +99,11 @@
                         </p>
                     </div>
                     <div class="statuts">
-                        <a href="mailto:escale.tierslieu@gmail.com?subject=Statuts de l'association&body=Bonjour, pouvez-vous m'envoyer les status de l'association. Merci!">Statuts de l'association ici.</a>
+                        <a id="statusAssoc" href="mailto:escale.tierslieu@gmail.com?subject=Statuts de l'association&body=Bonjour, pouvez-vous m'envoyer les status de l'association. Merci!">Statuts de l'association ici.</a>
                     </div>
                     <div class="adherer my-4">
                         <button class="btn btn-primary nav-item colorOfficiel" id="adhesion">
-                            <a class="nav-link adherer text-white " href="https://www.helloasso.com/associations/l-escale-tiers-lieu/adhesions/adhesion-2022 " target="_blank">Adhérer</a>
+                            <a class="nav-link adherer text-white " href="assets/html/adhesion.html" target="_blank">Adhérer</a>
                         </button>
                     </div>
                 </div>
@@ -111,10 +111,10 @@
                 </div>
             </div>
         </div>
-        <section>
+        <section class="dNoneEspace">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-12 col-sm-12">
+                    <div class="col-lg-12 col-sm-12" >
                         <div class="title-space text-center">
                             <h2 class="h1">L'espace</h2>
                         </div>
@@ -122,21 +122,21 @@
                             Ce lieu répond aux différentes demandes de ses utilisateurs ! <br> Vous y retrouvez plusieurs salles et bureaux selon l’usage.
                         </p>
 
-                        <div class="card-container d-flex flex-wrap justify-content-center mt-5">
-                            <div class="card" style="width: 18rem;">
+                        <div class="card-container d-flex flex-wrap justify-content-center mt-5 spaceStyle">
+                            <div style="width: 18rem;">
                                 <img class="card-img-top" src="assets/img/cardImg.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">UN BUREAU EFFICACE ET CONVIVIALE.</h5>
                                 </div>
                             </div>
 
-                            <div class="card " style="width: 18rem;">
+                            <div style="width: 18rem;">
                                 <img class="card-img-top" src="assets/img/cardImg.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">ENTREPRENARIAT DYNAMIQUE ET LOCALE.</h5>
                                 </div>
                             </div>
-                            <div class="card" style="width: 18rem;">
+                            <div style="width: 18rem;">
                                 <img class="card-img-top" src="assets/img/cardImg.jpg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">TRAVAIL, COLLABORATION, ECHANGE.</h5>
@@ -148,11 +148,11 @@
             </div>
         </section>
         <!---------------------------------- fin section 1  ----------------------->
-        <section class="bg-primary">
+        <section class="colorOfficiel">
             <div class="container">
                 <div class="row">
                     <div class="card-container d-flex flex-wrap justify-content-center mt-5">
-                        <div class="card bg-primary" style="width: 18rem;">
+                        <div class="card colorOfficiel" style="width: 18rem;">
                             <div class="img-card text-center my-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
@@ -163,7 +163,7 @@
                                 <h5 class="card-title text-center">FIBRE OPTIQUE</h5>
                             </div>
                         </div>
-                        <div class="card bg-primary" style="width: 18rem;">
+                        <div class="card colorOfficiel" style="width: 18rem;">
                             <div class="img-card text-center my-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
@@ -173,7 +173,7 @@
                                 <h5 class="card-title text-center">ESPACE DETENTE</h5>
                             </div>
                         </div>
-                        <div class="card bg-primary" style="width: 18rem;">
+                        <div class="card colorOfficiel" style="width: 18rem;">
                             <div class="img-card text-center my-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
@@ -183,27 +183,27 @@
                                 <h5 class="card-title text-center">IMPRIMANTE PHOTOCOPIE</h5>
                             </div>
                         </div>
-                        <div class="card bg-primary" style="width: 18rem;">
+                        <div class="card colorOfficiel" style="width: 18rem;">
                             <div class="img-card text-center my-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                               </svg>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title text-center">DURABLE.</h5>
+                                <h5 class="card-title text-center">DURABLE</h5>
                             </div>
                         </div>
-                        <div class="card bg-primary" style="width: 18rem;">
+                        <div class="card colorOfficiel" style="width: 18rem;">
                             <div class="img-card text-center my-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                               </svg>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title text-center">VIDEO PROJECTEUR.</h5>
+                                <h5 class="card-title text-center">VIDEO PROJECTEUR</h5>
                             </div>
                         </div>
-                        <div class="card bg-primary" style="width: 18rem;">
+                        <div class="card colorOfficiel" style="width: 18rem;">
                             <div class="img-card text-center my-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-heart " viewBox="0 0 16 16">
                                 <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
@@ -219,34 +219,36 @@
             </div>
         </section>
         <!---------------------------------- fin section 2  ----------------------->
-        <div class="title-ad text-center mt-3">
+        <section class="secAdhRes">
+           <div class="title-ad text-center mt-3">
             <h2 class="h1">Adhérer, Réserver...</h2>
-        </div>
-        <div class="defileParent text-center">
-            Adhérer à L’Escale, c’est d’abord adhérer à un état d’esprit emprunt de partage et de cohésion. C’est ensuite pouvoir accéder à l’ensemble des services proposés selon des conditions très avantageuses. L’adhésion annuelle n’est que de <strong>15 €</strong>            !
-            </span>
-        </div>
+            </div>
+            <div class="defileParent text-center">
+                <span class="adhRes">
+                Adhérer à L’Escale, c’est d’abord adhérer à un état d’esprit emprunt de partage et de cohésion. C’est ensuite pouvoir accéder à l’ensemble des services proposés selon des conditions très avantageuses. L’adhésion annuelle n’est que de <strong>15 €</strong>            !
+                </span>
+            </div> 
+        </section>
+        
     </main>
 
     <footer>
         <section id="footer-main ">
             <article>
                 <div class="content-wrapper">
-                    <h2>Ils nous font confiance: Les Adherents de l'Escale</h2>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, adipisci!</h3>
+                    <h2>Ils nous font confiance, les adherents de l'Escale :</h2>
                     <div class="adherents-wrapper">
 
                     </div>
                 </div>
-                </main>
 
                 <footer>
                     <section id="footer-main">
                         <article id="site-map">
                             <h2>Compte</h2>
                             <hr>
-                            <a>Se connecter</a>
-                            <a>Adhérer</a>
+                            <a href="#connexionHeader">Se connecter</a>
+                            <a href="assets/html/adhesion.html">Adhérer</a>
                         </article>
                         <article id="escale">
                             <h2>L’Escale Tiers-Lieu </h2>
@@ -276,27 +278,26 @@
                             </div>
                             <hr>
                             <div id="social-links">
-                                <a href=""><img src="assets/img/img footer/facebook.png" alt="Logo facebook de L’Escale Tiers-Lieu"></a>
-                                <a href=""><img src="assets/img/img footer/linkedin.png" alt="Logo linkedin de L’Escale Tiers-Lieu"></a>
-                                <a href=""><img src="assets/img/img footer/instagram.png" alt="Logo instagram de L’Escale Tiers-Lieu"></a>
+                                <a href="https://www.facebook.com/escale.tierslieu" target="_blank"><img src="assets/img/img footer/facebook.png" alt="Logo facebook de L’Escale Tiers-Lieu"></a>
+                                <a href="https://www.instagram.com/escale.tierslieu/?hl=fr" target="_blank"><img src="assets/img/img footer/linkedin.png" alt="Logo linkedin de L’Escale Tiers-Lieu"></a>
+                                <a href="https://www.linkedin.com/company/l-escale-tiers-lieu/" target="_blank"><img src="assets/img/img footer/instagram.png" alt="Logo instagram de L’Escale Tiers-Lieu"></a>
                             </div>
                         </article>
                         <article id="site-map">
                             <h2>Notre Association</h2>
                             <hr>
-                            <a>Notre mission</a>
-                            <a>La charte</a>
-                            <a>L'agenda</a>
-                            <a>Evenements</a>
+                            <a href="#missionAssociation">Notre mission</a>
+                            <a href="assets/html/charte.html">La charte</a>
+                            <a href="assets/html/events.html">Evènements</a>
                         </article>
                     </section>
                     <section id="footer-footer">
                         <div>
-                            <p>© 2022 L'Escale Tout droits réservés.</p>
+                            <p>© 2022 L'Escale Tous droits réservés.</p>
                         </div>
                         <div>
-                            <a id="ml">Mentions légales</a>
-                            <a>Conditions générales d'utilisations</a>
+                            <a href="#" id="ml">Mentions légales</a>
+                            <a href="#">Conditions générales d'utilisations</a>
                         </div>
                     </section>
                 </footer>

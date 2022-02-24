@@ -3,10 +3,6 @@
     src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap')
 }
 
-.colorOfficiel{
-    background-color: #41AAC1!important;
-    border: #41AAC1!important;
-}
 
 body {
     box-sizing: border-box;
@@ -64,7 +60,7 @@ body {
 }
 
 .active {
-    border-bottom: 2px solid #41AAC1;
+    border-bottom: 2px solid var(--primaire);
 }
 
 .bg-header {
@@ -99,4 +95,51 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+ /*-----------------------Modifs Melwyne----------------------------*/
+ *{
+    color: #0D0E0F!important;
+}
+:root{
+    --dark: #0D0E0F;
+    --light: #F2F2F1;
+    --primaire: #41AAC1;
+}
+body{
+    background-color: var(--light)!important;
+}
+.colorOfficiel{
+    background-color: var(--primaire)!important;
+    border: var(--primaire)!important;
+}
+.secAdhRes{
+    padding: 25px;
+    background-color: var(--light)!important;
+}
+.adhRes{
+    display: block;
+    max-width: 700px;
+    margin: 20px auto;
+}
+#statusAssoc{
+    color: var(--primaire)!important;
+}
+.cWhite{
+    color: var(--light)!important;
+}
+#backgroundOfficiel{
+    margin-bottom: 15px;
+    background-color: #F2F2F1;
+}
+.spaceStyle{
+    margin-bottom: 15px;
+}
+.spaceStyle > div{
+    margin: 5px;
+}
+@media screen and (max-width: 750px){
+    .dNoneEspace{
+        display: none;
+    }
 }

@@ -10,6 +10,7 @@ body {
 /* --------------------------------Section 2------------------------------------- */
 .contact_display {
   display: flex;
+  justify-content: space-evenly;
   width: 80%;
   margin: 0 auto;
 }
@@ -52,28 +53,30 @@ body {
 .form_submit {
   padding: 5px 25px 5px 25px;
   margin: 15px;
+  border: var(--primaire);
   border-radius: 50px;
   font-size: 15px;
-  background: #017aff;
+  background: var(--primaire);
   color: white;
   line-height: 1.5;
   transition: all 0.4s;
 }
 .form_submit:hover {
-  background: #0062cc;
+  background-color: #417dc1;
+  color: var(--light)!important;
 }
 .info_position {
   margin-bottom: 15px;
   font-weight: 600;
 }
 .info_contact {
-  color: black;
+  color: var(--dark);
 }
 
 /* ----------------------------section 2--------------------------- */
 
 #section2 {
-  background: #f8f8f8;
+  background-color: var(--light);
   background-size: cover;
   width: 100%;
   padding-bottom: 70px;
@@ -87,7 +90,7 @@ body {
 }
 
 .containt_map {
-  background-color: white;
+  background-color: var(--light);
   border-radius: 16px;
   display: flex;
   align-items: center;
@@ -103,7 +106,7 @@ body {
 .ifram_contact {
   width: 100%;
   border-radius: 16px;
-  box-shadow: 8px 16px 32px #0000001a;
+  box-shadow: 8px 16px 32px rgb(187, 187, 187);
 }
 /* -----------------------------------------footer---------------------------------------------------- */
 /* -------------------------mediaQueries------------------- */
@@ -121,7 +124,7 @@ body {
   .text_contact {
     text-align: center;
   }
-  .contact_position {
+  .contact_position{
     display: none;
   }
   .contact_display {
@@ -151,4 +154,36 @@ body {
   /* #section2 {
     background: none;
   } */
+}
+
+/*------------------------modifs Melwyne---------------------------------*/
+:root{
+  --dark: #0D0E0F;
+  --light: #F2F2F1;
+  --primaire: #41AAC1;
+}
+*{
+  color: var(--dark);
+}
+#section2{
+  border-bottom: solid 1px rgb(209, 209, 209);
+}
+.contact_display{
+  background-color: rgb(209, 209, 209);
+}
+.champ-input{
+  width: 500px;
+}
+@media screen and (max-width: 1000px){
+  .contact_display{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .contact_position{
+    display: none;
+  }
+  .champ-input{
+    width: 80%;
+  }
 }
