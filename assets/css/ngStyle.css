@@ -143,6 +143,10 @@ body{
     padding-top: 9px;
     margin: 0 auto;
 }
+.btn-primary{
+    background-color: var(--primaire)!important;
+    border: var(--primaire)!important;
+}
 @media screen and (max-width: 750px){
     .dNoneEspace{
         display: none;

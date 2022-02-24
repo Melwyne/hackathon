@@ -23,10 +23,11 @@ header{
 }
 .adhesion{
     width: 70%;
-    margin: 10px auto;
+    margin: 15px auto;
     border-radius: 15px;
     /*met une ombre sur ma boite(horizontal/verticale/adoucissement/couleur)*/
     box-shadow: 3px 3px 25px rgb(214, 214, 214);
+    background-color: rgb(226, 226, 226);
     position: relative;
 }
 /*permet de faire apparaitre/disparaitre le formulaire lorsqu'on lit la charte*/
@@ -258,9 +259,16 @@ form > input:nth-child(7){
     font-size: 25px;
     font-weight: bold;
     margin: 5px;
+    text-align: center;
 }
 .imgAdh{
     width: 700px;
+}
+.connectColorAdh{
+    color: var(--primaire)!important;
+}
+.connectColorAdh:hover{
+    text-decoration: underline!important;
 }
 .boxMsgAdhesion{
     margin: 15px;
@@ -269,7 +277,7 @@ form > input:nth-child(7){
     display: flex;
     /*permet de mettre les éléments en colonne*/
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 .boxMsgAdhesion > span > a{
     color: var(--primaire);
@@ -327,21 +335,9 @@ form > input:nth-child(7){
     align-items: center;
     margin: 15px;
 }
-/*met mes icons dans une div pour bien arrondir le background*/
-.adh{
-    /*même données width et height pour faire un carré*/
-    width: 35px;
-    height: 35px;
-    background-color: rgb(235, 235, 235);
-    /*permet de faire un joli rond en arrondissant les angles*/
-    border-radius: 50%;
-    margin: 0 auto;
-    text-align: center;
-    cursor: pointer;
-}
 .iconAdh{
-    width: 20px;
-    padding-top: 7px;
+    width: 30px;
+    cursor: pointer;
 }
 /*disparition de plusieurs éléments à max 700px d'écran*/
 @media screen and (max-width: 700px){
