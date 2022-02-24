@@ -1,4 +1,3 @@
-
 body {
     box-sizing: border-box;
 }
@@ -92,50 +91,63 @@ body {
     justify-content: center;
 }
 
- /*-----------------------Modifs Melwyne----------------------------*/
- *{
+
+/*-----------------------Modifs Melwyne----------------------------*/
+
+* {
     color: #0D0E0F!important;
 }
 
-body{
+body {
     background-color: var(--light)!important;
 }
-.colorOfficiel{
+
+.colorOfficiel {
     background-color: var(--primaire)!important;
     border: var(--primaire)!important;
 }
-.secAdhRes{
+
+.secAdhRes {
     padding: 25px;
     background-color: var(--light)!important;
 }
-.adhRes{
+
+.adhRes {
     display: block;
     max-width: 700px;
     margin: 20px auto;
 }
-#statusAssoc{
+
+#statusAssoc {
     color: var(--primaire)!important;
 }
-.cWhite{
+
+.cWhite {
     color: var(--light)!important;
 }
-#backgroundOfficiel{
+
+#backgroundOfficiel {
     margin-bottom: 15px;
     background-color: #F2F2F1;
 }
-.spaceStyle{
+
+.spaceStyle {
     margin-bottom: 15px;
 }
-.spaceStyle > div{
+
+.spaceStyle>div {
     margin: 5px;
 }
-.colorVar{
+
+.colorVar {
     color: var(--primaire)!important;
 }
-.alignLegend{
+
+.alignLegend {
     text-align: center;
 }
-.styleIconMateriel{
+
+.styleIconMateriel {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -143,12 +155,25 @@ body{
     padding-top: 9px;
     margin: 0 auto;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: var(--primaire)!important;
     border: var(--primaire)!important;
 }
-@media screen and (max-width: 750px){
-    .dNoneEspace{
+
+@media screen and (max-width: 750px) {
+    .dNoneEspace {
         display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: flex;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
     }
 }
