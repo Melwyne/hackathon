@@ -3,6 +3,7 @@ const seConnecter = document.querySelector("seConnecter");
 const adherer = document.querySelector("adherer");
 const btnTog = document.querySelector(".navbar-toggler");
 
+//changement du background au scroll
 window.addEventListener("scroll", () => {
     if (window.scrollY > 10) {
         navbar.style.background = "rgb(223,223,223)";
@@ -10,6 +11,8 @@ window.addEventListener("scroll", () => {
         navbar.style.background = "transparent";
     }
 });
+
+//changement du background au click du menu Burger
 btnTog.addEventListener("click", () => {
     if (btnTog.ariaExpanded == true) {
         navbar.style.background = "rgb(223,223,223)";
@@ -17,6 +20,8 @@ btnTog.addEventListener("click", () => {
         navbar.style.background = "transparent";
     }
 });
+
+//login du membre
 login.addEventListener("click", (e) => {
     e.preventDefault();
     connection.innerHTML = `<form class="form-inline">
