@@ -1,10 +1,11 @@
-:root{
-    --dark: #0D0E0F;
-    --light: #F2F2F1;
-    --primaire: #41AAC1;
-}
 *{
     color: var(--dark);
+}
+.titleEventHeader{
+    font-size: 50px;
+}
+.soustitleEventHeader{
+    font-size: 22px;
 }
 .headerEvents{
     font-weight: bold;

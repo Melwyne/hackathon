@@ -18,27 +18,27 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
 </head>
 <body>
-    <header class="headerAdhesion">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark justify-content-lg-between align-content-center fixed-top">
-            <a class="navbar-brand" href="../../index.html"><img class="logo" src="../img/logo.png" alt="l'escale Tiers-lieu Logo"></a>
+            <a class="navbar-brand" href="../../index.html"><img class="logo" src="../img/logoOffi" alt="l'escale Tiers-lieu Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center align-content-center" id="navbarNav">
                 <ul class="navbar-nav mx-3">
                     <li class="nav-item active">
-                        <a class="nav-link" href="../../index.html">Accueil <span class="sr-only">(current)</span></a>
+                        <a class="nav-link typoMedium" href="../../index.html">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/prestations.html">Prestations</a>
+                        <a class="nav-link typoMedium" href="../html/prestations.html">Prestations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/events.html">Evènements</a>
+                        <a class="nav-link typoMedium" href="../html/events.html">Evènements</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../html/contact.html">Contact</a>
+                        <a class="nav-link typoMedium" href="../html/contact.html">Contact</a>
                     </li>
-
+  
                 </ul>
                 <ul class="navbar-nav align-content-center mx-3">
                     <li class="nav-item">
@@ -51,10 +51,12 @@
                         <a class="nav-link" href=""><i class="fa-brands fa-linkedin-in"></i></a>
                     </li>
                 </ul>
-                <div>
-                    <ul class="navbar-nav mx-3">
-                        <li class="btn btn-light nav-item mx-2">Se Connecter</li>
-                        <li class="btn btn-primary nav-item">Adhérer</li>
+                <div id="connection">
+                    <ul class="navbar-nav mx-3" id="list-connect">
+                        <li class="btn btn-light nav-item mx-2 my-2  text-center justify-content-center" id="login"> <a class="nav-link nav-link-connect seConnecter typoMedium" href="# ">Se connecter</a></li>
+                        <li class="btn btn-primary nav-item mx-2 my-2 colorOfficiel" id="adhesion">
+                            <a class="nav-link nav-link-hover adherer cWhite typoMedium" href="../html/adhesion.html" target="_blank">Adhérer</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -88,48 +90,68 @@
         </section>
     </main>
     <footer>
-        <section id="footer-main">
+        <section id="footer-main ">
             <article>
-                <h2>L’Escale Tiers-Lieu </h2>
-                <hr>
-                <div class="text-wrapper">
-                    <img src="../img/img footer/map-pin.png" alt="icone d'une épingle de carte routiére">
-                    <div>
-                        <p> 1 Avenue Pasteur </p>
-                        <p>33480 CASTELNAU-DE-MEDOC</p>
-                    </div>
-                </div>
-                <div class="text-wrapper">
-                    <img src="../img/img footer/phone.png" alt="icone d'un téléphone">
-                    <p>05 57 09 11 40</p>
-                </div>
-                <div class="text-wrapper">
-                    <img src="../img/img footer/globe.png" alt="icone d'un globe">
-                    <p>contact@lescale-tierlieu.fr</p>
-                </div>
-                <hr>
-                <div id="social-links">
-                    <a href=""><img src="../img/img footer/facebook.png" alt="Logo facebook de L’Escale Tiers-Lieu"></a>
-                    <a href=""><img src="../img/img footer/linkedin.png" alt="Logo linkedin de L’Escale Tiers-Lieu"></a>
-                    <a href=""><img src="../img/img footer/instagram.png" alt="Logo instagram de L’Escale Tiers-Lieu"></a>
-                </div>
+                <footer>
+                    <section id="footer-main">
+                        <article id="site-map">
+                            <h2 class="typoSemiBold">Compte</h2>
+                            <hr>
+                            <a href="../../index.html#connexionHeader" class="typoLight">Se connecter</a>
+                            <a href="../html/adhesion.html" class="typoLight">Adhérer</a>
+                        </article>
+                        <article id="escale">
+                            <h2 class="typoSemiBold">L’Escale Tiers-Lieu </h2>
+                            <hr>
+                            <div class="text-wrapper ">
+                                <img src="../img/img footer/map-pin.png " alt="icone d 'une épingle de carte routiére">
+                                <div>
+                                    <p class="typoLight"> 1 Avenue Pasteur </p>
+                                    <p class="typoLight">33480 CASTELNAU-DE-MEDOC</p>
+                                </div>
+                            </div>
+                            <div class="text-wrapper">
+                                <img src="../img/img footer/phone.png" alt="icone d'un téléphone ">
+                                <p class="typoLight">05 57 09 11 40</p>
+                            </div>
+                            <div class="text-wrapper ">
+                                <img src="../img/img footer/globe.png " alt="icone d 'un globe">
+                                <p class="typoLight">contact@lescale-tierlieu.fr</p>
+                            </div>
+                            <div class="text-wrapper">
+                                <img src="../img/img footer/email.png" alt="icone d'un globe">
+                                <p class="typoLight">escale.tierslieu@gmail.com</p>
+                            </div>
+                            <div class="text-wrapper">
+                                <img src="../img/img footer/three-o-clock-clock.png" alt="icone d'un globe">
+                                <p class="typoLight">Ouvert 7j/7 - Permanence les mardis de 14h00 à 18h00</p>
+                            </div>
+                            <hr>
+                            <div id="social-links">
+                                <a href="https://www.facebook.com/escale.tierslieu" target="_blank"><img src="../img/img footer/facebook.png" alt="Logo facebook de L’Escale Tiers-Lieu"></a>
+                                <a href="https://www.instagram.com/escale.tierslieu/?hl=fr" target="_blank"><img src="../img/img footer/linkedin.png" alt="Logo linkedin de L’Escale Tiers-Lieu"></a>
+                                <a href="https://www.linkedin.com/company/l-escale-tiers-lieu/" target="_blank"><img src="../img/img footer/instagram.png" alt="Logo instagram de L’Escale Tiers-Lieu"></a>
+                            </div>
+                        </article>
+                        <article id="site-map">
+                            <h2 class="typoSemiBold">Notre Association</h2>
+                            <hr>
+                            <a href="../../index.html#missionAssociation" class="typoLight">Notre mission</a>
+                            <a href="../html/charte.html" class="typoLight">La charte</a>
+                            <a href="../html/events.html" class="typoLight">Evènements</a>
+                        </article>
+                    </section>
+                    <section id="footer-footer">
+                        <div>
+                            <p class="typoLight">© 2022 L'Escale Tous droits réservés.</p>
+                        </div>
+                        <div>
+                            <a class="typoLight" href="#" id="ml">Mentions légales</a>
+                            <a class="typoLight" href="#">Conditions générales d'utilisations</a>
+                        </div>
+                    </section>
+                </footer>
             </article>
-            <article id="site-map">
-                <h2>Site map</h2>
-                <a>Acceuil</a>
-                <a>Presentation</a>
-                <a>Agenda</a>
-                <a>contact</a>
-            </article>
-        </section>
-        <section id="footer-footer">
-            <div>
-                <p>© 2022 L'Escale Tout droits réservés.</p>
-            </div>
-            <div>
-                <a id="ml">Mentions légales</a>
-                <a>Conditions générales d'utilisations</a>
-            </div>
         </section>
     </footer>
     <script src="../../ngscript.js"></script>

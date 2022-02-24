@@ -1,19 +1,26 @@
+/*----------------------------------------------Formulaire d'adhésion-----------------------------------------------------*/
+header{
+    height: 128px;
+}
 .connexionHeader{
     height: 128px;
 }
-/*----------------------------------------------Formulaire d'adhésion-----------------------------------------------------*/
 .headerAdhesion{
     width: 100%;
     height: 128px;
 }
 .nav-link{
-    color: rgb(167, 167, 167)!important;
+    color: var(--black)!important;
 }
 .nav-link:hover{
-    color: blue!important;
+    color: var(--primaire)!important;
 }
-
-/*----------------------------------------------Formulaire d'adhésion-----------------------------------------------------*/
+.nav-link-hover:hover{
+    color: var(--light)!important;
+}
+.nav-link-connect:hover{
+    color: var(--black)!important;
+}
 .adhesion{
     width: 70%;
     margin: 10px auto;
@@ -32,6 +39,10 @@
 .adhesionPage > h2{
     font-size: 40px;
     margin: 20px 0;
+}
+.msgAdh{
+    width: 70%;
+    text-align: center;
 }
 /*formulaire*/
 .formAdhesion{
@@ -77,7 +88,7 @@ form > input:nth-child(7){
 }
 .charteRead{
     font-size: 14px;
-    color: blue;
+    color: var(--primaire)!important;
 }
 /*soulignement au survol de la souris*/
 .charteRead:hover{
@@ -86,7 +97,7 @@ form > input:nth-child(7){
 /*obligé de le mettre en block pour lui donner une taille car c'est un inline normalement */
 .submitFormAdhesion{
     display: block;
-    background-color: blue;
+    background-color: var(--primaire);
     color: white;
     font-size: 15px;
     /*je mets des bordures transparentes pour pas que ca fasse un changement etrange au hover*/
@@ -102,9 +113,9 @@ form > input:nth-child(7){
 /*changement d'état au survol*/
 .submitFormAdhesion:hover{
     /*inversement des couleurs*/
-    color: blue;
+    color: var(--primaire);
     background-color: white;
-    border: solid 2px blue;
+    border: solid 2px var(--primaire);
     border-radius: 25px;
 }
 .submitAdhesion{
@@ -125,7 +136,7 @@ form > input:nth-child(7){
     }
     /*changement de couleur sur ecran plus petit*/
     .adhesionPage > h2{
-        color: blue;
+        color: var(--primaire);
     }
     /*plus de border radisu et taille à 100% pour la boite parent*/
     .adhesion{
@@ -154,7 +165,7 @@ form > input:nth-child(7){
     border-bottom: solid 3px rgb(235, 235, 235);
     /*donne une taille et une couleur à ma scrollbar, permet de la personnaliser*/
     scrollbar-width: thin;
-    scrollbar-color: blue rgb(235, 235, 235); 
+    scrollbar-color: var(--primaire) rgb(235, 235, 235); 
 }
 .charteDocument > h4, .charteDocument > h3{
     margin: 10px 0;
@@ -188,12 +199,16 @@ form > input:nth-child(7){
     /*changement de la souris lorsqu'on est dessus pour montrer que c'est cliquable*/
     cursor: pointer;
 }
+.closeCharte:hover{
+    color: red!important;
+    transition: 0.2s;
+}
 .styleBtnCharte{
     margin: 0 auto;
     text-align: center;
 }
 .closeBtnCharte{
-    background-color: blue;
+    background-color: var(--primaire);
     color: white;
     font-size: 15px;
     border: solid 2px transparent;
@@ -203,6 +218,13 @@ form > input:nth-child(7){
     margin-bottom: 20px;
     cursor: pointer;
     text-align: center;
+}
+.closeBtnCharte:hover{
+    /*inversement des couleurs*/
+    color: var(--primaire);
+    background-color: white;
+    border: solid 2px var(--primaire);
+    border-radius: 25px;
 }
 /*largeur max à mon titre quand l'écran fait moins de 1000px*/
 @media screen and (max-width: 1000px){
@@ -250,7 +272,7 @@ form > input:nth-child(7){
     justify-content: center;
 }
 .boxMsgAdhesion > span > a{
-    color: blue;
+    color: var(--primaire);
 }
 .boxMsgAdhesion > span > a:hover{
     text-decoration: underline;
@@ -262,14 +284,14 @@ form > input:nth-child(7){
 /*stylise mon titre*/
 .boxMsgAdhesion > h1{
     display: none;
-    color: blue;
+    color: var(--primaire);
     text-align: center;
     font-size: 35px;
     margin: 10px;
 }
 /*style donné à mon bouton*/
 .btnAccueilAdhesion{
-    background-color: blue;
+    background-color: var(--primaire);
     color: white;
     font-size: 15px;
     border: solid 2px transparent;
@@ -284,9 +306,9 @@ form > input:nth-child(7){
 }
 /*changement d'état au survol*/
 .btnAccueilAdhesion:hover{
-    color: blue;
+    color: var(--primaire);
     background-color: white;
-    border: solid 2px blue;
+    border: solid 2px var(--primaire);
     border-radius: 25px;
 }
 .connectProposition{
