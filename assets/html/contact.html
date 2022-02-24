@@ -49,75 +49,52 @@
     <link rel="stylesheet" href="../css/contact_style.css" />
   </head>
   <body>
-    <head>
-      <nav
-        class="navbar navbar-expand-lg navbar-dark justify-content-lg-between align-content-center fixed-top"
-      >
-        <a class="navbar-brand" href="index.html"
-          ><img
-            class="logo"
-            src="../img/logo.png"
-            alt="l'escale Tiers-lieu Logo"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-center align-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav mx-3">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"
-                >Accueil <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="prestations.html">Prestations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Evènements</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav align-content-center mx-3">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://www.facebook.com/escale.tierslieu"
-                ><i class="fa-brands fa-facebook-f"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href=""
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href=""
-                ><i class="fa-brands fa-linkedin-in"></i
-              ></a>
-            </li>
-          </ul>
-          <div>
-            <ul class="navbar-nav mx-3">
-              <li class="btn btn-light nav-item mx-2">Se Connecter</li>
-              <li class="btn btn-primary nav-item">Adhérer</li>
-            </ul>
+    <header id="connexionHeader">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-center align-content-center fixed-top">
+          <a class="navbar-brand" href="../../index.html"><img class="logo" src="../img/logo.png" alt="l'escale Tiers-lieu Logo"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center align-content-center col-sm-8" id="navbarNav">
+              <ul class="navbar-nav mx-3">
+                  <li class="nav-item active ">
+                      <a class="nav-link" href="../../index.html">Accueil <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item text-black">
+                      <a class="nav-link" href="../html/prestations.html">Prestations</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../html/events.html">Evènements</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="../html/contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item sr-only-focusable">
+                      <a class="nav-link disabled" href="#">Agenda</a>
+                  </li>
+              </ul>
+              <ul class="navbar-nav align-content-center mx-3">
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://www.facebook.com/escale.tierslieu" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://www.instagram.com/escale.tierslieu/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="https://www.linkedin.com/company/l-escale-tiers-lieu/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+              </ul>
+              <div id="connection">
+                  <ul class="navbar-nav mx-3" id="list-connect">
+                      <li class="btn btn-light nav-item mx-2 my-2  text-center justify-content-center" id="login"> <a class="nav-link seConnecter" href="# ">Se Connecter</a></li>
+                      <li class="btn btn-primary nav-item mx-2 my-2 colorOfficiel" id="adhesion">
+                          <a class="nav-link adherer cWhite" href="../html/adhesion.html" target="_blank">Adhérer</a>
+                      </li>
+                  </ul>
+              </div>
           </div>
-        </div>
       </nav>
-    </head>
+  </header>
     <main>
       <!-- -------------------------------------------------Section 1------------------------------------------------------------- -->
       <section>
@@ -210,90 +187,67 @@
     </main>
     <!-- ------------------------------------------------------Footer-------------------------------------------------------------------- -->
     <footer>
-      <section id="footer-main">
-        <article id="site-map">
-          <h2>Compte</h2>
-          <hr />
-          <a>Se connecter</a>
-          <a>Adhérer</a>
-        </article>
-        <article id="escale">
-          <h2>L’Escale Tiers-Lieu</h2>
-          <hr />
-          <div class="text-wrapper">
-            <img
-              src="../img/img footer/map-pin.png"
-              alt="icone d'une épingle de carte routiére"
-            />
-            <div>
-              <p>1 Avenue Pasteur</p>
-              <p>33480 CASTELNAU-DE-MEDOC</p>
-            </div>
-          </div>
-          <div class="text-wrapper">
-            <img src="../img/img footer/phone.png" alt="icone d'un téléphone" />
-            <p>05 57 09 11 40</p>
-          </div>
-          <div class="text-wrapper">
-            <img src="../img/img footer/globe.png" alt="icone d'un globe" />
-            <p>contact@lescale-tierlieu.fr</p>
-          </div>
-          <div class="text-wrapper">
-            <img src="../img/img footer/email.png" alt="icone d'un globe" />
-            <p>escale.tierslieu@gmail.com</p>
-          </div>
-          <div class="text-wrapper">
-            <img
-              src="../img/img footer/three-o-clock-clock.png"
-              alt="icone d'un globe"
-            />
-            <p>Ouvert 7j/7 - Permanence les mardis de 14h00 à 18h00</p>
-          </div>
-          <hr />
-          <div id="social-links">
-            <a href=""
-              ><img
-                src="../img/img footer/facebook.png"
-                alt="Logo facebook de L’Escale Tiers-Lieu"
-            /></a>
-            <a href=""
-              ><img
-                src="../img/img footer/linkedin.png"
-                alt="Logo linkedin de L’Escale Tiers-Lieu"
-            /></a>
-            <a href=""
-              ><img
-                src="../img/img footer/instagram.png"
-                alt="Logo instagram de L’Escale Tiers-Lieu"
-            /></a>
-          </div>
-        </article>
-        <article id="site-map">
-          <h2>Notre Association</h2>
-          <hr />
-          <a>Notre mission</a>
-          <a>La charte</a>
-          <a>L'agenda</a>
-          <a>Evenements</a>
-        </article>
-      </section>
-      <section id="footer-footer">
-        <div>
-          <p>© 2022 L'Escale Tout droits réservés.</p>
-        </div>
-        <div>
-          <a id="ml">Mentions légales</a>
-          <a>Conditions générales d'utilisations</a>
-        </div>
-      </section>
-    </footer>
-    <!-- ------------------------------------------------------------------------------------------------------------------------ -->
-    <script type="module" src="../js/page adherents/adherents-html.js"></script>
-    <script
-      type="module"
-      src="..//js/page adherents/adherents-html-handler.js"
-    ></script>
-    <script src="../../ngscript.js"></script>
+      <section id="footer-main ">
+              <footer>
+                  <section id="footer-main">
+                      <article id="site-map">
+                          <h2>Compte</h2>
+                          <hr>
+                          <a href="../../index.html#connexionHeader">Se connecter</a>
+                          <a href="../html/adhesion.html">Adhérer</a>
+                      </article>
+                      <article id="escale">
+                          <h2>L’Escale Tiers-Lieu </h2>
+                          <hr>
+                          <div class="text-wrapper ">
+                              <img src="../img/img footer/map-pin.png " alt="icone d 'une épingle de carte routiére">
+                              <div>
+                                  <p> 1 Avenue Pasteur </p>
+                                  <p>33480 CASTELNAU-DE-MEDOC</p>
+                              </div>
+                          </div>
+                          <div class="text-wrapper">
+                              <img src="../img/img footer/phone.png" alt="icone d'un téléphone ">
+                              <p>05 57 09 11 40</p>
+                          </div>
+                          <div class="text-wrapper ">
+                              <img src="../img/img footer/globe.png " alt="icone d 'un globe">
+                              <p>contact@lescale-tierlieu.fr</p>
+                          </div>
+                          <div class="text-wrapper">
+                              <img src="../img/img footer/email.png" alt="icone d'un globe">
+                              <p>escale.tierslieu@gmail.com</p>
+                          </div>
+                          <div class="text-wrapper">
+                              <img src="../img/img footer/three-o-clock-clock.png" alt="icone d'un globe">
+                              <p>Ouvert 7j/7 - Permanence les mardis de 14h00 à 18h00</p>
+                          </div>
+                          <hr>
+                          <div id="social-links">
+                              <a href="https://www.facebook.com/escale.tierslieu" target="_blank"><img src="../img/img footer/facebook.png" alt="Logo facebook de L’Escale Tiers-Lieu"></a>
+                              <a href="https://www.instagram.com/escale.tierslieu/?hl=fr" target="_blank"><img src="../img/img footer/linkedin.png" alt="Logo linkedin de L’Escale Tiers-Lieu"></a>
+                              <a href="https://www.linkedin.com/company/l-escale-tiers-lieu/" target="_blank"><img src="../img/img footer/instagram.png" alt="Logo instagram de L’Escale Tiers-Lieu"></a>
+                          </div>
+                      </article>
+                      <article id="site-map">
+                          <h2>Notre Association</h2>
+                          <hr>
+                          <a href="../../index.html#missionAssociation">Notre mission</a>
+                          <a href="../html/charte.html">La charte</a>
+                          <a href="../html/events.html">Evènements</a>
+                      </article>
+                  </section>
+                  <section id="footer-footer">
+                      <div>
+                          <p>© 2022 L'Escale Tous droits réservés.</p>
+                      </div>
+                      <div>
+                          <a href="#" id="ml">Mentions légales</a>
+                          <a href="#">Conditions générales d'utilisations</a>
+                      </div>
+                  </section>
+              </footer>
+                <script src="../../ngscript.js"></script>
     <script src="../js/contact/contact.js"></script>
   </body>
 </html>
