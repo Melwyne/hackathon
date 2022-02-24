@@ -174,14 +174,14 @@ margin-right: 28px;
 a{
     color: #0D0E0F;
 }
-.content-wrapper-sam{
+/* .content-wrapper-sam{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 600px;
     padding: 20px;
     background-color: #41AAC1;
-}
+} */
 .content-wrapper-sam > h2{
     font-size: 40px;
     margin: 10px;
