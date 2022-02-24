@@ -80,4 +80,14 @@
     .events{
         width: 375px;
     }
+    .events img{
+        display: none;
+    }
+    .events > article{
+        margin: 20px 0;
+        border: solid 1px black;
+        padding: 10px;
+        background-color: white;
+        border-radius: 10px;
+    }
 }
