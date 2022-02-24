@@ -19,72 +19,57 @@
     
 </head>
 <body>
-    <header id="connexionHeader">
-        <nav class="navbar navbar-expand-lg navbar-light justify-content-center align-content-center fixed-top">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logo.png" alt="l'escale Tiers-lieu Logo"></a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-lg-between align-content-center fixed-top">
+            <a class="navbar-brand" href="../../index.html"><img class="logo" src="../img/logoOffi" alt="l'escale Tiers-lieu Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center align-content-center col-sm-8" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-center align-content-center" id="navbarNav">
                 <ul class="navbar-nav mx-3">
-                    <li class="nav-item active ">
-                        <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item text-black">
-                        <a class="nav-link" href="assets/html/prestations.html">Prestations</a>
+                    <li class="nav-item active">
+                        <a class="nav-link typoMedium" href="../../index.html">Accueil <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="assets/html/events.html">Evènements</a>
+                        <a class="nav-link typoMedium" href="../html/prestations.html">Prestations</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="assets/html/contact.html">Contact</a>
+                        <a class="nav-link typoMedium" href="../html/events.html">Evènements</a>
                     </li>
-                    <li class="nav-item sr-only-focusable">
-                        <a class="nav-link disabled" href="#">Agenda</a>
+                    <li class="nav-item">
+                        <a class="nav-link typoMedium" href="../html/contact.html">Contact</a>
                     </li>
+  
                 </ul>
                 <ul class="navbar-nav align-content-center mx-3">
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.facebook.com/escale.tierslieu" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a class="nav-link" href="https://www.facebook.com/escale.tierslieu"><i class="fa-brands fa-facebook-f"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.instagram.com/escale.tierslieu/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="nav-link" href=""><i class="fa-brands fa-instagram"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/company/l-escale-tiers-lieu/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a class="nav-link" href=""><i class="fa-brands fa-linkedin-in"></i></a>
                     </li>
                 </ul>
                 <div id="connection">
                     <ul class="navbar-nav mx-3" id="list-connect">
-                        <li class="btn btn-light nav-item mx-2 my-2  text-center justify-content-center" id="login"> <a class="nav-link seConnecter" href="# ">Se Connecter</a></li>
+                        <li class="btn btn-light nav-item mx-2 my-2  text-center justify-content-center" id="login"> <a class="nav-link nav-link-connect seConnecter typoMedium" href="# ">Se connecter</a></li>
                         <li class="btn btn-primary nav-item mx-2 my-2 colorOfficiel" id="adhesion">
-                            <a class="nav-link adherer cWhite" href="assets/html/adhesion.html" target="_blank">Adhérer</a>
+                            <a class="nav-link nav-link-hover adherer cWhite typoMedium" href="../html/adhesion.html" target="_blank">Adhérer</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="bg-header ">
-
-        </div>
-        <div class="caption text-center">
-            <div class="big-title upper ">
-                <h1>Besoin d'un bureau ? </h1>
-            </div>
-            <div class="sub-big-title d-flex justify-content-center flex-column align-content-center ">
-                <p>Reservez une salle dès maintenant grâce à la reservation en ligne.</p>
-                <p>Accessible dès maintenat du lundi au dimanche</p>
-            </div>
-            <div class="btn btn-primary upper justify-content-center p-3 colorOfficiel">
-                <a class="list list-group list-group-item-action-primary text-white" href="assets/html/reservations.html ">Reserver maintenant !</a>
-            </div>
-        </div>
     </header>
     <main>
         <section class="adhesion adhesionPage">
-            <h2>ADHESION</h2>
+            <h2 class="typoSemiBold">ADHESION</h2>
+            <p class="typoLight msgAdh">Adhérer à L’Escale, c’est d’abord adhérer à un état d’esprit emprunt de partage et de cohésion. C’est ensuite pouvoir accéder à l’ensemble des services proposés selon des conditions très avantageuses. L’adhésion annuelle n’est que de 15 € ! 
+            </p>
             <form action="" method="post" class="formAdhesion">
-                <span>Informations personnelles</span>
+                <span class="typoMedium">Informations personnelles</span>
                 <label for="name"></label>
                 <input type="text" id="name" name="user_name" placeholder="Nom">
                 <label for="lastName"></label>
@@ -100,7 +85,7 @@
                 <label for="phone"></label>
                 <input type="phone" id="phone" name="phone" placeholder="Numéro de téléphone">
 
-                <span>Paiement</span>                
+                <span class="typoMedium">Paiement 15€</span>                
                 <label for="cardName"></label>
                 <input type="text" id="cardName" name="cardName" placeholder="Nom du titulaire de la carte">
                 <label for="expiration"></label>
@@ -111,48 +96,48 @@
                 <input type="text" id="crypto" name="crypto" placeholder="Cryptogramme" class="crypto">
                 <div class="checkAdhesion">
                     <input type="checkbox" id="checkbox" name="checkbox"> 
-                    <label for="checkbox" class="charte">J'accepte la charte de l'association.</label>
-                    <a href="#" class="charteRead">Lire la charte</a>
+                    <label for="checkbox" class="charte typoLight">J'accepte la charte de l'association.</label>
+                    <a href="#" class="charteRead typoLight">Lire la charte</a>
                 </div>
                 <div class="submitAdhesion">
-                    <a href="adhesionCheck.html" class="submitFormAdhesion">ENVOYER</a>
+                    <a href="adhesionCheck.html" class="submitFormAdhesion typoLight">ENVOYER</a>
                 </div>
             </form>
         </section>
         <section class="adhesion dNone">
             <div class="closeCharte">X</div>
-            <h2 class="titleCharte">CHARTE DE L'ASSOCIATION</h2>
+            <h2 class="titleCharte typoMedium">CHARTE DE L'ASSOCIATION</h2>
             <div class="charteDocument">
-                <h3>BIEN VIVRE A L’ESCALE</h3>
-                <h4>Notre charte, votre charte, leur charte...</h4>
-                <p>L’Escale  est un tiers-lieude  coworking  reposant  sur  le partage et l’échange. Cette charte est destinée à conserver un  lieu  où  il  fait  bon  être  et  travailler.  Elle  s’applique  à l’ensemble des usagers adhérents ou invités.
+                <h3 class="typoMedium">BIEN VIVRE A L’ESCALE</h3>
+                <h4 class="typoMedium">Notre charte, votre charte, leur charte...</h4>
+                <p class="typoLight">L’Escale  est un tiers-lieude  coworking  reposant  sur  le partage et l’échange. Cette charte est destinée à conserver un  lieu  où  il  fait  bon  être  et  travailler.  Elle  s’applique  à l’ensemble des usagers adhérents ou invités.
                 </p>
-                <h4>J'adhère</h4>
-                <p>L’Escale accueille  des  travailleurs  indépendants,des  télétravailleurs,  des  chefs d’entreprise,  des  porteurs  de  projets,  de  tous  secteurs  d’activitésou  encore  des personnes en recherche d’emploi, des artistes, des étudiants, etc. Lieu ouvert, souple et  flexible, l’Escaleest  gérée  sur  un  mode  associatif. Je  souscris  à  une  adhésion annuelle. Je suis majeur et je justifie d’une assurance en responsabilité civile.
+                <h4 class="typoMedium">J'adhère</h4>
+                <p class="typoLight">L’Escale accueille  des  travailleurs  indépendants,des  télétravailleurs,  des  chefs d’entreprise,  des  porteurs  de  projets,  de  tous  secteurs  d’activitésou  encore  des personnes en recherche d’emploi, des artistes, des étudiants, etc. Lieu ouvert, souple et  flexible, l’Escaleest  gérée  sur  un  mode  associatif. Je  souscris  à  une  adhésion annuelle. Je suis majeur et je justifie d’une assurance en responsabilité civile.
                 </p>
-                <h4>Je suis bienveillant</h4>
-                <p>Je partage un espace en confiance, dans le respect de l’autre, de ses convictions et de  sa  vie  privée.  J’échange  de  manière  ouverte  car  un  concurrent  peut  toujours devenir  un  collaborateur  d’un  jour  ou  de  toujours.  Je  peux  téléphoner,  mais  je  me souviens que je ne suis pas seul. Lorsque je reçois une personne extérieure lors d’un rendez-vous  client  par  exemple,  je  pense  à  réserver un  bureauou  je  m’approprie l’espace d’accueil plus convivial.
+                <h4 class="typoMedium">Je suis bienveillant</h4>
+                <p class="typoLight">Je partage un espace en confiance, dans le respect de l’autre, de ses convictions et de  sa  vie  privée.  J’échange  de  manière  ouverte  car  un  concurrent  peut  toujours devenir  un  collaborateur  d’un  jour  ou  de  toujours.  Je  peux  téléphoner,  mais  je  me souviens que je ne suis pas seul. Lorsque je reçois une personne extérieure lors d’un rendez-vous  client  par  exemple,  je  pense  à  réserver un  bureauou  je  m’approprie l’espace d’accueil plus convivial.
                 </p>
-                <h4>Dans quoi je travaille</h4>
-                <p>Je peux accéder à un bureau dans un espace partagé, une salle de formation ou de réunion avec vidéoprojecteur, un coind’accueil convivial et une cuisine équipée. Je réserve une place via le calendrier partagé mis en place. Je peux louer un bureau à lademi-journée, à la journée ou par tranche de deux heures, le soir en semaine et même le  week-end.  Mon  bureau ne  sera  pas  toujours  le  même.  Si  je  n’aime  pas  le changement, je peux avoir un bureau permanentloué au mois. Partager l’usage d’un lieu,  cela  sous-entend:nettoyer  après  moi,  faire  ma  vaisselle, ouvrir  les  volets  en arrivant, les fermer à mon  départ, éteindre les lumières lorsque je  quitte  une  pièce,arroser les  plantes,  remettre  les  choses  en  place  quand  j’ai  aménagé  un  bureau différemment, participer au ménage, vider et sortir les poubelles, etc.
+                <h4 class="typoMedium">Dans quoi je travaille</h4>
+                <p class="typoLight">Je peux accéder à un bureau dans un espace partagé, une salle de formation ou de réunion avec vidéoprojecteur, un coind’accueil convivial et une cuisine équipée. Je réserve une place via le calendrier partagé mis en place. Je peux louer un bureau à lademi-journée, à la journée ou par tranche de deux heures, le soir en semaine et même le  week-end.  Mon  bureau ne  sera  pas  toujours  le  même.  Si  je  n’aime  pas  le changement, je peux avoir un bureau permanentloué au mois. Partager l’usage d’un lieu,  cela  sous-entend:nettoyer  après  moi,  faire  ma  vaisselle, ouvrir  les  volets  en arrivant, les fermer à mon  départ, éteindre les lumières lorsque je  quitte  une  pièce,arroser les  plantes,  remettre  les  choses  en  place  quand  j’ai  aménagé  un  bureau différemment, participer au ménage, vider et sortir les poubelles, etc.
                 </p>
-                <h4>Avec quoi je travaille</h4>
-                <p>Je  viens  travailler  avec  mes  propres  outils  de  travail,  de  l’ordi  au  stylo  et  j’en  suis responsable. Mais l’Escaleest prêteuse aux oublieux... Si je suis permanent, je peux laisser mes outils de travail personnels sur mon bureau. L’Escalene pourra être tenue responsable  en  cas  de  perte,  de  vol  et  de  dégâts  de  matériel  personnel.  Il  est recommandé aux utilisateurs habituels de contracter une assurance vol valable hors du domicile.
+                <h4 class="typoMedium">Avec quoi je travaille</h4>
+                <p class="typoLight">Je  viens  travailler  avec  mes  propres  outils  de  travail,  de  l’ordi  au  stylo  et  j’en  suis responsable. Mais l’Escaleest prêteuse aux oublieux... Si je suis permanent, je peux laisser mes outils de travail personnels sur mon bureau. L’Escalene pourra être tenue responsable  en  cas  de  perte,  de  vol  et  de  dégâts  de  matériel  personnel.  Il  est recommandé aux utilisateurs habituels de contracter une assurance vol valable hors du domicile.
                 </p>
-                <h4>Je me connecte</h4>
-                <p>Je peux utiliser le wifi de manière illimitée. Je vérifie que je dispose des équipements matériels, logiciels, navigateurs et anti-virus me permettant d’utiliser  pleinement ce service. Je suis seul responsable de la sécurité de mes équipements.L’Escalene peut être  tenueresponsable en cas de préjudices directs et/ou indirects subis du fait de l’utilisation du service wifi.
+                <h4 class="typoMedium">Je me connecte</h4>
+                <p class="typoLight">Je peux utiliser le wifi de manière illimitée. Je vérifie que je dispose des équipements matériels, logiciels, navigateurs et anti-virus me permettant d’utiliser  pleinement ce service. Je suis seul responsable de la sécurité de mes équipements.L’Escalene peut être  tenueresponsable en cas de préjudices directs et/ou indirects subis du fait de l’utilisation du service wifi.
                 </p>
-                <h4>Je suis pour le durable</h4>
-                <p>Le café, le thé, le sucre, etc.sont  offerts  par l’Escalequi  rappelle  que  le  gaspillage, c’est pasjoli joli !J’ai un accès libre à l’imprimante et au papier de manière raisonnable et  mesurée.  Les  volumes  importants  seront  facturés. Je  prends  soin  du  matériel prêté.  Quand  je  ne  sais  pas  comment  marche  une  machine,  je  demande de  l’aideavant de faire une grosse bêtise. Et si ça ne marche pas, je le dis. S’il fait beau temps, j’éteins les lumières inutiles. Je mets des pulls l’hiver pour avoir chaud. Je pense à mettre en veille les appareils et les éteindre pour les absences prolongées. Je tri les déchets.  Je  me  place le  plus  souvent  possible dans  une  démarche  responsable socialement et écologiquement.
+                <h4 class="typoMedium">Je suis pour le durable</h4>
+                <p class="typoLight">Le café, le thé, le sucre, etc.sont  offerts  par l’Escalequi  rappelle  que  le  gaspillage, c’est pasjoli joli !J’ai un accès libre à l’imprimante et au papier de manière raisonnable et  mesurée.  Les  volumes  importants  seront  facturés. Je  prends  soin  du  matériel prêté.  Quand  je  ne  sais  pas  comment  marche  une  machine,  je  demande de  l’aideavant de faire une grosse bêtise. Et si ça ne marche pas, je le dis. S’il fait beau temps, j’éteins les lumières inutiles. Je mets des pulls l’hiver pour avoir chaud. Je pense à mettre en veille les appareils et les éteindre pour les absences prolongées. Je tri les déchets.  Je  me  place le  plus  souvent  possible dans  une  démarche  responsable socialement et écologiquement.
                 </p>
-                <h4>Je bénéficie et je participe à des animations</h4>
-                <p>Différentes  animations  peuvent  être  organisées  dans  le  lieu.  Je  peux  librement participer  aux  animations  proposées,  qu’elles  soient  gratuites  ou  payantes.  Je participe régulièrement aux temps de repas partagés pour maintenir l’esprit collectif et  collaboratif  du  lieuainsi  qu’aux  permanences.  Je  peux  proposer  aux  membres d’organiser une animation. L’organisation d’un événement est soumise aux mêmes exigences  que  pour  n’importe  quel  usage  du  lieu.  Le  calendrier  des  différentes animations est tenupar l’associationet est accessible à tous les adhérents.
+                <h4 class="typoMedium">Je bénéficie et je participe à des animations</h4>
+                <p class="typoLight">Différentes  animations  peuvent  être  organisées  dans  le  lieu.  Je  peux  librement participer  aux  animations  proposées,  qu’elles  soient  gratuites  ou  payantes.  Je participe régulièrement aux temps de repas partagés pour maintenir l’esprit collectif et  collaboratif  du  lieuainsi  qu’aux  permanences.  Je  peux  proposer  aux  membres d’organiser une animation. L’organisation d’un événement est soumise aux mêmes exigences  que  pour  n’importe  quel  usage  du  lieu.  Le  calendrier  des  différentes animations est tenupar l’associationet est accessible à tous les adhérents.
                 </p>
-                <h4>J'informe, je communique</h4>
-                <p>Je suis présent sur le site internet de l’Escale dans un «annuaire collectif» (tant que je  suis  à  jour  de  mon  adhésion  et  de  mes  factures).  Je  peux  annoncer  des évènements sur les réseaux sociaux ad hoc. Si je suis résident permanentou que ma professionl’exige,j’ai la possibilité de communiquer, à mes  frais et  dans un format similaire pour tous, en devanture de l’espace.
+                <h4 class="typoMedium">J'informe, je communique</h4>
+                <p class="typoLight">Je suis présent sur le site internet de l’Escale dans un «annuaire collectif» (tant que je  suis  à  jour  de  mon  adhésion  et  de  mes  factures).  Je  peux  annoncer  des évènements sur les réseaux sociaux ad hoc. Si je suis résident permanentou que ma professionl’exige,j’ai la possibilité de communiquer, à mes  frais et  dans un format similaire pour tous, en devanture de l’espace.
                 </p>
-                <h4>Je garde les clés de la maison</h4>
-                <p>Les utilisateurs habituelsdisposent d’une clé. Si je la perds, j’en fais refaire une à mes frais.Je suis vigilant sur la fermeture du lieu (fenêtres, portes et volets).
+                <h4 class="typoMedium">Je garde les clés de la maison</h4>
+                <p class="typoLight">Les utilisateurs habituelsdisposent d’une clé. Si je la perds, j’en fais refaire une à mes frais.Je suis vigilant sur la fermeture du lieu (fenêtres, portes et volets).
                 </p>
                 <div>
                     <span>Charte collective du bien vivre ensemble à l’Escale</span>
@@ -162,68 +147,74 @@
                 </div>
             </div>
             <div class="styleBtnCharte">
-                <button class="closeBtnCharte">FERMER</button>
+                <button class="closeBtnCharte typoLight">FERMER</button>
             </div>
         </section>
     </main>
     <section id="footer-main ">
         <footer>
-            <section id="footer-main">
-                <article id="site-map">
-                    <h2>Compte</h2>
-                    <hr>
-                    <a href="../../index.html#connexionHeader">Se connecter</a>
-                    <a href="../html/adhesion.html">Adhérer</a>
+            <section id="footer-main ">
+                <article>
+                    <footer>
+                        <section id="footer-main">
+                            <article id="site-map">
+                                <h2 class="typoSemiBold">Compte</h2>
+                                <hr>
+                                <a href="../../index.html#connexionHeader" class="typoLight">Se connecter</a>
+                                <a href="../html/adhesion.html" class="typoLight">Adhérer</a>
+                            </article>
+                            <article id="escale">
+                                <h2 class="typoSemiBold">L’Escale Tiers-Lieu </h2>
+                                <hr>
+                                <div class="text-wrapper ">
+                                    <img src="../img/img footer/map-pin.png " alt="icone d 'une épingle de carte routiére">
+                                    <div>
+                                        <p class="typoLight"> 1 Avenue Pasteur </p>
+                                        <p class="typoLight">33480 CASTELNAU-DE-MEDOC</p>
+                                    </div>
+                                </div>
+                                <div class="text-wrapper">
+                                    <img src="../img/img footer/phone.png" alt="icone d'un téléphone ">
+                                    <p class="typoLight">05 57 09 11 40</p>
+                                </div>
+                                <div class="text-wrapper ">
+                                    <img src="../img/img footer/globe.png " alt="icone d 'un globe">
+                                    <p class="typoLight">contact@lescale-tierlieu.fr</p>
+                                </div>
+                                <div class="text-wrapper">
+                                    <img src="../img/img footer/email.png" alt="icone d'un globe">
+                                    <p class="typoLight">escale.tierslieu@gmail.com</p>
+                                </div>
+                                <div class="text-wrapper">
+                                    <img src="../img/img footer/three-o-clock-clock.png" alt="icone d'un globe">
+                                    <p class="typoLight">Ouvert 7j/7 - Permanence les mardis de 14h00 à 18h00</p>
+                                </div>
+                                <hr>
+                                <div id="social-links">
+                                    <a href="https://www.facebook.com/escale.tierslieu" target="_blank"><img src="../img/img footer/facebook.png" alt="Logo facebook de L’Escale Tiers-Lieu"></a>
+                                    <a href="https://www.instagram.com/escale.tierslieu/?hl=fr" target="_blank"><img src="../img/img footer/linkedin.png" alt="Logo linkedin de L’Escale Tiers-Lieu"></a>
+                                    <a href="https://www.linkedin.com/company/l-escale-tiers-lieu/" target="_blank"><img src="../img/img footer/instagram.png" alt="Logo instagram de L’Escale Tiers-Lieu"></a>
+                                </div>
+                            </article>
+                            <article id="site-map">
+                                <h2 class="typoSemiBold">Notre Association</h2>
+                                <hr>
+                                <a href="../../index.html#missionAssociation" class="typoLight">Notre mission</a>
+                                <a href="../html/charte.html" class="typoLight">La charte</a>
+                                <a href="../html/events.html" class="typoLight">Evènements</a>
+                            </article>
+                        </section>
+                        <section id="footer-footer">
+                            <div>
+                                <p class="typoLight">© 2022 L'Escale Tous droits réservés.</p>
+                            </div>
+                            <div>
+                                <a class="typoLight" href="#" id="ml">Mentions légales</a>
+                                <a class="typoLight" href="#">Conditions générales d'utilisations</a>
+                            </div>
+                        </section>
+                    </footer>
                 </article>
-                <article id="escale">
-                    <h2>L’Escale Tiers-Lieu </h2>
-                    <hr>
-                    <div class="text-wrapper ">
-                        <img src="../img/img footer/map-pin.png " alt="icone d 'une épingle de carte routiére">
-                        <div>
-                            <p> 1 Avenue Pasteur </p>
-                            <p>33480 CASTELNAU-DE-MEDOC</p>
-                        </div>
-                    </div>
-                    <div class="text-wrapper">
-                        <img src="../img/img footer/phone.png" alt="icone d'un téléphone ">
-                        <p>05 57 09 11 40</p>
-                    </div>
-                    <div class="text-wrapper ">
-                        <img src="../img/img footer/globe.png " alt="icone d 'un globe">
-                        <p>contact@lescale-tierlieu.fr</p>
-                    </div>
-                    <div class="text-wrapper">
-                        <img src="../img/img footer/email.png" alt="icone d'un globe">
-                        <p>escale.tierslieu@gmail.com</p>
-                    </div>
-                    <div class="text-wrapper">
-                        <img src="../img/img footer/three-o-clock-clock.png" alt="icone d'un globe">
-                        <p>Ouvert 7j/7 - Permanence les mardis de 14h00 à 18h00</p>
-                    </div>
-                    <hr>
-                    <div id="social-links">
-                        <a href="https://www.facebook.com/escale.tierslieu" target="_blank"><img src="../img/img footer/facebook.png" alt="Logo facebook de L’Escale Tiers-Lieu"></a>
-                        <a href="https://www.instagram.com/escale.tierslieu/?hl=fr" target="_blank"><img src="../img/img footer/linkedin.png" alt="Logo linkedin de L’Escale Tiers-Lieu"></a>
-                        <a href="https://www.linkedin.com/company/l-escale-tiers-lieu/" target="_blank"><img src="../img/img footer/instagram.png" alt="Logo instagram de L’Escale Tiers-Lieu"></a>
-                    </div>
-                </article>
-                <article id="site-map">
-                    <h2>Notre Association</h2>
-                    <hr>
-                    <a href="../../index.html#missionAssociation">Notre mission</a>
-                    <a href="../html/charte.html">La charte</a>
-                    <a href="../html/events.html">Evènements</a>
-                </article>
-            </section>
-            <section id="footer-footer">
-                <div>
-                    <p>© 2022 L'Escale Tous droits réservés.</p>
-                </div>
-                <div>
-                    <a href="#" id="ml">Mentions légales</a>
-                    <a href="#">Conditions générales d'utilisations</a>
-                </div>
             </section>
         </footer>
     <script src="../../ngscript.js"></script>

@@ -64,6 +64,7 @@ body {
 .form_submit:hover {
   background-color: #417dc1;
   color: var(--light)!important;
+  cursor: pointer;
 }
 .info_position {
   margin-bottom: 15px;
