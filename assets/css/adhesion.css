@@ -1,0 +1,334 @@
+/*----------------------------------------------Formulaire d'adhésion-----------------------------------------------------*/
+.headerAdhesion{
+    width: 100%;
+    height: 128px;
+}
+.nav-link{
+    color: rgb(167, 167, 167)!important;
+}
+.nav-link:hover{
+    color: blue!important;
+}
+
+/*----------------------------------------------Formulaire d'adhésion-----------------------------------------------------*/
+.adhesion{
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 15px;
+    /*met une ombre sur ma boite(horizontal/verticale/adoucissement/couleur)*/
+    box-shadow: 3px 3px 25px rgb(214, 214, 214);
+    position: relative;
+}
+/*permet de faire apparaitre/disparaitre le formulaire lorsqu'on lit la charte*/
+.adhesionPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.adhesionPage > h2{
+    font-size: 40px;
+    margin: 20px 0;
+}
+/*formulaire*/
+.formAdhesion{
+    display: flex;
+    align-items: center;
+    /*envoie tous les champs à la ligne quand plus de place*/
+    flex-wrap: wrap;
+    /*largeur de 80% de son parent*/
+    width: 80%;
+    padding: 10px;
+}
+/*bordure pour séparer les différentes catégorie de champs*/
+form > span{
+    border-bottom: solid 1px gray;
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+/*stylise chaque champs avec une bordure plus sympa que le input de base*/
+form > input{
+    border: solid 1.5px gray;
+    border-radius: 4px;
+    padding-left: 5px;
+    height: 30px;
+    margin: 8px;
+    width: 47%;
+}
+/*je donne une taille particulière à mon input placé en 7e position*/
+form > input:nth-child(7){
+    width: 95.5%;
+}
+/*taille spécifique pour mes 2 derniers champs*/
+.expiration, .crypto{
+    width: 17%;
+}
+.checkAdhesion{
+    margin: 7px;
+    width: 500px;
+}
+.charte{
+    font-size: 14px;
+    margin-left: 3px;
+}
+.charteRead{
+    font-size: 14px;
+    color: blue;
+}
+/*soulignement au survol de la souris*/
+.charteRead:hover{
+    text-decoration: underline!important;
+}
+/*obligé de le mettre en block pour lui donner une taille car c'est un inline normalement */
+.submitFormAdhesion{
+    display: block;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    /*je mets des bordures transparentes pour pas que ca fasse un changement etrange au hover*/
+    border: solid 2px transparent;
+    border-radius: 25px;
+    width: 110px;
+    height: 35px;
+    margin: 4px auto;
+    /*changement du pointer pour montrer que c'est cliquable*/
+    cursor: pointer;
+    padding-top: 3px;
+}
+/*changement d'état au survol*/
+.submitFormAdhesion:hover{
+    /*inversement des couleurs*/
+    color: blue;
+    background-color: white;
+    border: solid 2px blue;
+    border-radius: 25px;
+}
+.submitAdhesion{
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+}
+/*tous les champs prennent 100% de largeur à moins de 990px d'ecran*/
+@media screen and (max-width: 990px){
+    form > input, form > input:nth-child(7), .expiration, .crypto{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px){
+    /*idem*/
+    form > input, form > input:nth-child(7), .expiration, .crypto{
+        width: 100%;
+    }
+    /*changement de couleur sur ecran plus petit*/
+    .adhesionPage > h2{
+        color: blue;
+    }
+    /*plus de border radisu et taille à 100% pour la boite parent*/
+    .adhesion{
+        width: 100%;
+        border-radius: 0%;
+    }
+}
+
+
+/*----------------------------------------------------Charte-----------------------------------------------------------*/
+.titleCharte{
+    text-align: center;
+    padding: 30px 0;
+}
+.charteDocument{
+    /*permet de ne pas dépasser 600px de large*/
+    max-width: 600px;
+    height: 700px;
+    margin: 20px auto;
+    /*padding que droite et gauche*/
+    padding-right: 20px;
+    padding-left: 10px;
+    /*permet d'installer un scroll sur ma boite si l'ordi le juge nécessaire*/
+    overflow: auto;
+    border-top: solid 3px rgb(235, 235, 235);
+    border-bottom: solid 3px rgb(235, 235, 235);
+    /*donne une taille et une couleur à ma scrollbar, permet de la personnaliser*/
+    scrollbar-width: thin;
+    scrollbar-color: blue rgb(235, 235, 235); 
+}
+.charteDocument > h4, .charteDocument > h3{
+    margin: 10px 0;
+}
+.charteDocument > p{
+    padding-bottom: 10px;
+}
+.charteDocument > div{
+    display: flex;
+    flex-direction: column;
+    /*je demande à ce qu'il s'aligne à la fin*/
+    align-items: flex-end;
+    justify-content: center;
+    margin: 15px;
+    font-size: 12px;
+}
+.closeCharte{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgb(235, 235, 235);
+    text-align: center;
+    font-size: 25px;
+    /*permet de le placer où je veux, position relative mise sur le parent*/
+    position: absolute;
+    /*je déplace son point de réf tout à droite*/
+    transform: translate(-100%, 0);
+    /*je lui demnade de se placer où je souhaite*/
+    left: 98%;
+    top: 2%;
+    /*changement de la souris lorsqu'on est dessus pour montrer que c'est cliquable*/
+    cursor: pointer;
+}
+.styleBtnCharte{
+    margin: 0 auto;
+    text-align: center;
+}
+.closeBtnCharte{
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    border: solid 2px transparent;
+    border-radius: 25px;
+    width: 110px;
+    height: 35px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+/*largeur max à mon titre quand l'écran fait moins de 1000px*/
+@media screen and (max-width: 1000px){
+    .titleCharte{
+        max-width: 550px;
+    }
+}
+/*changement de design quand l'écran fait moins de 700px = responsive*/
+@media screen and (max-width: 700px){
+    .charteDocument{
+        text-align: center;
+        width: 400px;
+    }
+    .titleCharte{
+        font-size: 25px;
+        max-width: 350px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/*---------------------------------------------------------Adhésion approuvée-----------------------------------------------*/
+.textAdhesion{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+}
+.msgAdhesion{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px;
+}
+.imgAdh{
+    width: 700px;
+}
+.boxMsgAdhesion{
+    margin: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    display: flex;
+    /*permet de mettre les éléments en colonne*/
+    flex-direction: column;
+    justify-content: center;
+}
+.boxMsgAdhesion > span > a{
+    color: blue;
+}
+.boxMsgAdhesion > span > a:hover{
+    text-decoration: underline;
+}
+/*sélectionne le 3e element de ma class*/
+.boxMsgAdhesion span:nth-child(3){
+    margin: 5px;
+}
+/*stylise mon titre*/
+.boxMsgAdhesion > h1{
+    display: none;
+    color: blue;
+    text-align: center;
+    font-size: 35px;
+    margin: 10px;
+}
+/*style donné à mon bouton*/
+.btnAccueilAdhesion{
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    border: solid 2px transparent;
+    border-radius: 25px;
+    width: 110px;
+    height: 35px;
+    margin: 5px;
+    /*changement de ma souris sur lélément*/
+    cursor: pointer;
+    padding-top: 3px;
+    text-align: center;
+}
+/*changement d'état au survol*/
+.btnAccueilAdhesion:hover{
+    color: blue;
+    background-color: white;
+    border: solid 2px blue;
+    border-radius: 25px;
+}
+.connectProposition{
+    width: 190px;
+    text-align: center;
+}
+.connectProposition > span{
+    display: block;
+    border-bottom: solid 2px rgb(207, 207, 207);
+    width: 190px;
+    padding: 5px;
+}
+.iconConnexion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15px;
+}
+/*met mes icons dans une div pour bien arrondir le background*/
+.adh{
+    /*même données width et height pour faire un carré*/
+    width: 35px;
+    height: 35px;
+    background-color: rgb(235, 235, 235);
+    /*permet de faire un joli rond en arrondissant les angles*/
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+}
+.iconAdh{
+    width: 20px;
+    padding-top: 7px;
+}
+/*disparition de plusieurs éléments à max 700px d'écran*/
+@media screen and (max-width: 700px){
+    .imgAdh, .connectProposition, .boxMsgAdhesion > span:nth-child(3){
+        display: none;
+    }
+    .msgAdhesion, .btnAccueilAdhesion{
+        text-align: center;
+        margin: 7px auto;
+    }
+    /*apparition d'un titre*/
+    .boxMsgAdhesion > h1{
+        display: block;
+    }
+}
