@@ -14,13 +14,14 @@
 }
 
 .content-wrapper-sam h2{
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   padding-top: 0;
   font: normal normal medium 52px/60px ;
   letter-spacing: 0.73px;
 }
 
 .content-wrapper-sam h3{
+  text-align: center;
   margin-bottom: 50px;
   font: normal normal 600 16px/22px Noto Sans;
   letter-spacing: 0px;
