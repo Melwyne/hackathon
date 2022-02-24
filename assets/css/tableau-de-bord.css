@@ -3,13 +3,14 @@
     margin: 0 auto;
 }
 
-#nav-tdb a{
+#tdb-header a{
     text-decoration: none;
     color: rgb(54, 54, 54);
     transition: 0.5s;
+    font-weight: bold;
 }
 
-#nav-tdb a:hover{
+#tdb-header a:hover{
     color: black;
     border-bottom: #41AAC1 1px solid;
 }
