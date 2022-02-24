@@ -40,4 +40,22 @@ spans[i].onclick = function() {
 
 }
 
+//======================================================
+// script concerant le bouton voir tous les adherents
+//=================    ⬇⬇⬇⬇⬇⬇    =======================
+
+//déclaration des variables
+const btnVoir = document.getElementById("voir-tout")
+const sectionAdherents = document.getElementsByClassName("adherents-wrapper")[0]
+
+//La fonction qui toggle l affichage de la section adherent
+const voirTout = ()=>{
+  sectionAdherents.classList.toggle("masquer")
+} 
+
+btnVoir.addEventListener("click",voirTout)
+
+
+
+
 
