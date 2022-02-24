@@ -6,7 +6,7 @@ const btnTog = document.querySelector(".navbar-toggler");
 //changement du background au scroll
 window.addEventListener("scroll", () => {
     if (window.scrollY > 10) {
-        navbar.style.background = "rgb(223,223,223)";
+        navbar.style.background = "rgb(255,255,255)";
     } else {
         navbar.style.background = "transparent";
     }
@@ -14,8 +14,10 @@ window.addEventListener("scroll", () => {
 
 //changement du background au click du menu Burger
 btnTog.addEventListener("click", () => {
-    if (btnTog.ariaExpanded == true) {
-        navbar.style.background = "rgb(223,223,223)";
+    console.log(btnTog.attributes[5].value);
+    if (btnTog.attributes[5].value == "false") {
+        console.log("test");
+        navbar.style.background = "rgb(255,255,255)";
     } else {
         navbar.style.background = "transparent";
     }
