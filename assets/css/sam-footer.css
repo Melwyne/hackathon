@@ -174,7 +174,7 @@ margin-right: 28px;
 a{
     color: #0D0E0F;
 }
-.content-wrapper{
+.content-wrapper-sam{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -182,14 +182,26 @@ a{
     padding: 20px;
     background-color: #41AAC1;
 }
-.content-wrapper > h2{
+.content-wrapper-sam > h2{
     font-size: 40px;
     margin: 10px;
     text-align: center;
+    color: var(--light)!important;
 }
 #footer-footer{
     background-color: #41AAC1!important;
 }
 footer{
     background-color: #F2F2F1!important;
+}
+.partenaires{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+}
+.imgPartenaires{
+    width: 150px;
 }

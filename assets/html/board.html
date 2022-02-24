@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tableau de bord L'Escale</title>
+    <link rel="icon" href="../img/logoIconOnglet">
     <link rel="stylesheet" href="../css/board.css">
+    <link rel="stylesheet" href="../css/librairie.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -17,9 +19,9 @@
             <a href="#">
                 <img class="iconBoard" src="../img/imgBoard/active.png" alt="Logo d'une cloche alertant les notifications">
             </a>
-            <span>Pierrine Godelier</span>
+            <span class="typoMedium">Pierrine Godelier</span>
             <a href="#">
-                <img class="iconBoard" src="../img/imgBoard/fleche-vers-le-bas.png" alt="Logo d'une flèche allant vers le bas">
+                <img class="iconBoard iconBoardFleche" src="../img/imgBoard/fleche-vers-le-bas.png" alt="Logo d'une flèche allant vers le bas">
             </a>
         </div>
     </header>
@@ -29,72 +31,72 @@
                 <a href="#">
                     <li>        
                         <img class="iconBoardNav" src="../img/imgBoard/maison.png" alt="Logo d'une maison">
-                        <span>Tableau de bord</span>                        
+                        <span class="typoLight">Tableau de bord</span>                        
                     </li>
                 </a>
                 <a href="#">
                     <li>
                         <img class="iconBoardNav" src="../img/imgBoard/mail.png" alt="Logo d'un courriel">
-                        <span>Inbox</span>
+                        <span class="typoLight">Inbox</span>
                         <span class="notifMail">16</span>
                     </li>
                 </a>
                 <a href="#">
                     <li>
                         <img class="iconBoardNav" src="../img/imgBoard/invoice.png" alt="Logo d'un invoice">
-                        <span>Invoices</span>
+                        <span class="typoLight">Invoices</span>
                     </li>
                 </a>
                 <a href="#">
                     <li>
                         <img class="iconBoardNav" src="../img/imgBoard/la-personne.png" alt="Logo d'une personne">
-                        <span>Customers</span>
+                        <span class="typoLight">Customers</span>
                     </li>
                 </a>
                 <a href="#">
                     <li>
                         <img class="iconBoardNav" src="../img/imgBoard/chat.png" alt="Logo d'un chat">
-                        <span>Chat Room</span>
+                        <span class="typoLight">Chat Room</span>
                     </li>
                 </a>
                 <a href="#">
                     <li>
                         <img class="iconBoardNav" src="../img/imgBoard/calendar.png" alt="Logo d'un calendrier">
-                        <span>Calendar</span>
+                        <span class="typoLight">Calendar</span>
                     </li>
                 </a>
                 <a href="#">
                     <li>
                         <img class="iconBoardNav" src="../img/imgBoard/question.png" alt="Logo d'un point d'interrogation">
-                        <span>Help Center</span>
+                        <span class="typoLight">Help Center</span>
                     </li>
                 </a>
                 <a href="#">
                     <li>
                         <img class="iconBoardNav" src="../img/imgBoard/settings.png" alt="Logo d'un engrenage">
-                        <span>Settings</span>
+                        <span class="typoLight">Settings</span>
                     </li>
                 </a>
             </ul>
         </nav>
         <section class="boardTable">
             <header class="headerMain">
-               <h1>Tableau de bord</h1> 
+               <h1 class="typoSemiBold">Tableau de bord</h1> 
                <div class="calendarMain">
                    <div class="day">
-                        <span>Jours</span>
-                        <span class="dateSelected">Semaines</span>
-                        <span>Mois</span>
+                        <span class="typoLight">Jours</span>
+                        <span class="dateSelected typoLight">Semaines</span>
+                        <span class="typoLight">Mois</span>
                    </div>
                    <div class="year">
                         <img class="iconBoardMain" src="../img/imgBoard/calendar.png" alt="Logo d'un calendrier">
-                        <span>Jan, 2022 - Dec, 2022</span>
+                        <span class="typoLight">Jan, 2022 - Dec, 2022</span>
                    </div>
                </div>
             </header>
             <article class="articleBoard">
                 <div class="chiffreBoard">
-                    <h2>Total des réservations</h2>
+                    <h2 class="typoMedium">Total des réservations</h2>
                     <div>
                         <span>1,3K</span>
                         <div class="iconArticleBoard">
@@ -104,7 +106,7 @@
                     <span>2.3% + que l'année dernière</span>
                 </div>
                 <div class="chiffreBoard">
-                    <h2>Total des taux de rebond</h2>
+                    <h2 class="typoMedium">Total des taux de rebond</h2>
                     <div>
                         <span>56%</span>
                         <div class="iconArticleBoard">
@@ -114,7 +116,7 @@
                     <span>2.1% + que l'année dernière</span>
                 </div>
                 <div class="chiffreBoard">
-                    <h2>Total des revenus</h2>
+                    <h2 class="typoMedium">Total des revenus</h2>
                     <div>
                         <span>786,342€</span>
                         <div class="iconArticleBoard">
@@ -124,7 +126,7 @@
                     <span>1.8% - que l'année dernière</span>
                 </div>
                 <div class="chiffreBoard">
-                    <h2>Total des adhérents</h2>
+                    <h2 class="typoMedium">Total des adhérents</h2>
                     <div>
                         <span>48</span>
                         <div class="iconArticleBoard">
@@ -137,12 +139,12 @@
             <div class="resaBoard">
                 <article class="reservationGraph">
                     <div class="paramReservationGraph">
-                        <h2>RESERVATIONS</h2>
+                        <h2 class="typoSemiBold">RESERVATIONS</h2>
                         <div class="calendarMain">
                             <div class="day">
-                                <span>Jour</span>
-                                <span class="dateSelected">Semaine</span>
-                                <span>Mois</span>
+                                <span class="typoLight">Jours</span>
+                                <span class="dateSelected typoLight">Semaines</span>
+                                <span class="typoLight">Mois</span>
                             </div>
                             <div class="year">
                                 <img class="iconBoardMain" src="../img/imgBoard/calendar.png" alt="Logo d'un calendrier">
@@ -153,7 +155,7 @@
                     <img src="../img/imgBoard/planning resa.png" alt="Image d'un planning de suivi des réservations">
                 </article>
                 <article class="newAdherents">
-                    <h2>Nouveaux adhérents</h2>
+                    <h2 class="typoSemiBold">Nouveaux adhérents</h2>
                     <div>
                         <span>Camille Cottin</span>
                         <img class="iconMailBoard" src="../img/imgBoard/mail.png" alt="Logo d'un courriel">
@@ -170,7 +172,7 @@
                         <span>Sophie Marceau</span>
                         <img class="iconMailBoard" src="../img/imgBoard/mail.png" alt="Logo d'un courriel">
                     </div>
-                    <a href="#">Tous les adhérents ></a>
+                    <a href="#" class="typoLight">Tous les adhérents ></a>
                 </article>
             </div>
         </section>

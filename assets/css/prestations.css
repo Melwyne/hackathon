@@ -102,7 +102,7 @@
 /* Deuxieme section  */
 
 .presta-benef-wrapper{
-    padding: 60px 0;
+    padding-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -140,8 +140,8 @@
 
 .cercle-benef{
     border-radius: 50%;
-    height: 56px;
-    width: 56px;
+    height: 80px;
+    width: 80px;
     background-color: #41AAC1;
     display: flex;
     justify-content: center;
@@ -196,6 +196,7 @@
  .opCuisine{
      margin-top: 10px;
  }
- .presta-benef-wrapper{
-     border-bottom: solid 1px gray;
- }
+.tailleImgInstall{
+    font-size: 50px;
+    filter: invert(1);
+}

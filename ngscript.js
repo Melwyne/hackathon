@@ -39,10 +39,13 @@ login.addEventListener("click", (e) => {
                     <li class="btn btn-primary nav-item " id="adhesion">
                         <a class="nav-link adherer " id="admin" >Admin</a>                        
                             <div class="list-group" id="sideMenu">
-                                <a href="#" class="list-group-item list-group-item-action " aria-current="true">
+                                <a href="assets/html/board.html" class="list-group-item list-group-item-action " aria-current="true">
                                 Tableau de bord
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action">Mon agenda</a>
+                                <a href="https://app.reservio.com/" class="list-group-item list-group-item-action " aria-current="true">
+                                Reservio
+                                </a>
+                                <a href="assets/html/tableau-de-bord.html" class="list-group-item list-group-item-action">Tableau de bord adhérents</a>
                                 <a href="index.html" class="list-group-item list-group-item-action">Se déconnecter</a>
                             </div>                      
                     </li>

@@ -1,6 +1,12 @@
+header{
+    height: 128px;
+}
 .main-tdb{
     max-width: 1020px;
     margin: 0 auto;
+    background-color: rgb(216, 216, 216);
+    border-radius: 25px;
+    padding: 30px 30px 60px 30px;
 }
 
 #tdb-header a{
@@ -27,7 +33,7 @@
 #tdb-header h2{
     font: normal normal bold 52px/60px Proxima Nova;
     letter-spacing: 0.73px;
-    margin-right: 30px;
+    margin: 30px auto;
 }
 
 #nav-tdb{
@@ -73,6 +79,7 @@
     font: normal normal bold 60px/120px Noto Sans;
     letter-spacing: 0px;
     color: #FFFFFF;
+    padding-top: 15px;
 }
 
 #pfp{
@@ -86,7 +93,8 @@
 #Changer-la-photo{
     font: normal normal 600 8px/11px Noto Sans;
     letter-spacing: 0px;
-    margin-top: 8px;
+    margin: 15px;
+    font-size: 12px;
 }
 
 #Changer-la-photo:hover{
@@ -113,7 +121,8 @@
     background-color: #41AAC1;
     color: white;
     border-radius: 100px;
-    font: normal normal 600 16px/22px Noto Sans
+    font: normal normal 600 16px/22px Noto Sans;
+    margin: 15px 0;
 }
 
 article{
@@ -133,6 +142,7 @@ article p {
 #new-resa{
     display: flex;
     align-items: center;
+    margin: 10px 0 15px 0;
 }
 
 #new-resa:hover{

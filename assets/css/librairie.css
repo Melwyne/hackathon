@@ -74,10 +74,10 @@ a{
     display: none;
 }
 .bgImg{
-    background-image: url("");
+    background-image: url("../img/imgPersonne/montgolfiere");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
 }
 .border{
     border: black solid 1px;

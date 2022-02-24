@@ -1,70 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="fr">
+    <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="description"
+        content="Page de contact de l'association L'Escale Tiers-Lieu."
+    />
+    <title>Tableau de bord adhérents</title>
+    <!-----------------------------navbar links---------------------------------- -->
+    <link rel="icon" href="../img/logoIconOnglet">
+    <link rel="stylesheet" href="../css/ngStyle.css" />
+    <link rel="stylesheet" href="../css/librairie.css">
     <link rel="stylesheet" href="../css/tableau-de-bord.css">
-    <title>Document</title>
-</head>
-<body>
-    <main class="main-tdb">
-        <div id="tdb-header">
-            <h2>TABLEAU DE BORD</h2>
-            <a href="">Retour accueil</a>
-        </div>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <!-- ------------------------------footer links------------------------------------------ -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"
+        defer
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"
+        defer
+    ></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"
+        defer
+    ></script>
+    <!-- ----------------------------Link css page CSS---------------------------------------- -->
+    <link rel="stylesheet" href="../css/sam-footer.css" />
+    <!-- --------------------------------------------------------------------------- -->
+    <link rel="stylesheet" href="../css/contact_style.css" />
+    </head>
+    <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-lg-between align-content-center fixed-top">
+            <a class="navbar-brand" href="../../index.html"><img class="logo" src="../img/logoOffi" alt="l'escale Tiers-lieu Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center align-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-3">
+                    <li class="nav-item">
+                        <a class="nav-link typoMedium" href="../../index.html">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link typoMedium" href="../html/prestations.html">Prestations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link typoMedium" href="../html/events.html">Evènements</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link typoMedium" href="../html/contact.html">Contact</a>
+                    </li>
 
+                </ul>
+                <ul class="navbar-nav align-content-center mx-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com/escale.tierslieu"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+                <div id="connection">
+                    <ul class="navbar-nav mx-3" id="list-connect">
+                        <li class="btn btn-light nav-item mx-2 my-2  text-center justify-content-center" id="login"> <a class="nav-link seConnecter typoMedium" href="# ">Se connecter</a></li>
+                        <li class="btn btn-primary nav-item mx-2 my-2 colorOfficiel" id="adhesion">
+                            <a class="nav-link adherer cWhite typoMedium" href="../html/adhesion.html" target="_blank">Adhérer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+<main class="main-tdb">
+        <div id="tdb-header">
+            <h2 class="typoBold">TABLEAU DE BORD</h2>
+        </div>
         <section class="tdb-section">
             <div class="tdb-container">
                 <div id="user">
                     <div id="pfp">
                         <div id="user-circle">
-                            <p>DB</p>
+                            <p class="typoBold">DB</p>
                         </div>
-                        <a id="Changer-la-photo" href="">Changer la photo</a>
+                        <a id="Changer-la-photo" href="#" class="typoLight">Changer la photo</a>
                     </div>
                     <div id="user-text">
-                        <p>Denise Bravo</p>
-                        <p>01 36 12 34 56</p>
-                        <p>denise123@wanadoo.com</p>
+                        <p class="typoMedium">Denise Bravo</p>
+                        <p class="typoMedium">01 36 12 34 56</p>
+                        <p class="typoMedium">denise123@wanadoo.com</p>
                     </div>
                 </div>
-                <p id="adherent">Adhèrent jusqu'au 03/06/22</p>
+                <p id="adherent" class="typoLight">Adhèrent jusqu'au 03/06/22</p>
                 <article>
-                    <p>RENOUVELER L'ADHESION</p>
+                    <p class="typoMedium">RENOUVELER L'ADHESION</p>
                     <hr>
-                    <p>CONTACTER L'ADMINISTRATEUR</p>
+                    <p class="typoMedium">CONTACTER L'ADMINISTRATEUR</p>
                     <hr>
-                    <p>LA CHARTE</p>
+                    <p class="typoMedium">LA CHARTE</p>
                     <hr>
-                    <p>REGLAGES</p>
+                    <p class="typoMedium">REGLAGES</p>
                     <hr>
                 </article>
             </div>
             <div class="tdb-container">
                 <article>
-                    <h3>PROCHAINES RESERVATIONS :</h3>
-                    <p>16 FEVRIER 2022 / SALLE 03 13:00 - 16:00</p>
+                    <h3 class="typoSemiBold">PROCHAINES RESERVATIONS :</h3>
+                    <p class="typoLight">16 FEVRIER 2022 / SALLE 03 13:00 - 16:00</p>
                     <hr>
-                    <p>18 FEVRIER 2022 / SALLE 03 13:00 - 16:00</p>
+                    <p class="typoLight">18 FEVRIER 2022 / SALLE 03 13:00 - 16:00</p>
                     <hr>
-                    <p>18 FEVRIER 2022 / SALLE 03 13:00 - 16:00</p>
+                    <p class="typoLight">18 FEVRIER 2022 / SALLE 03 13:00 - 16:00</p>
                     <hr>
-                    <a id="new-resa" href="">
+                    <a id="new-resa" href="#" class="typoLight">
                         <img src="../img/img footer/add.png" alt="icone de l'addition" width="20px">
                         Ajouter une nouvelle réservation
                     </a>
                 </article>
                 <article>
-                    <h3>EVENEMENTS A VENIR :</h3>
-                    <p>BAL DES POMPIERS 12/02/2022 à partir de 18h.</p>
+                    <h3 class="typoSemiBold">EVENEMENTS A VENIR :</h3>
+                    <p class="typoLight">BAL DES POMPIERS 12/02/2022 à partir de 18h.</p>
                     <hr>
-                    <p>18 FEVRIER 2022 / SALLE 03 13:00 - 16:00</p>
+                    <p class="typoLight">18 FEVRIER 2022 / SALLE 03 13:00 - 16:00</p>
                     <hr>
-                    <p>18 FEVRIER 2022 / SALLE 03 13:00 - 16:00</p>
+                    <p class="typoLight">18 FEVRIER 2022 / SALLE 03 13:00 - 16:00</p>
                 </article>
             </div>
         </section>
     </main>
-</body>
-</html>
+    <footer>
+        <section id="footer-main ">
+            <article>
+                <footer>
+                    <section id="footer-main">
+                        <article id="site-map">
+                            <h2 class="typoSemiBold">Compte</h2>
+                            <hr>
+                            <a href="../../index.html#connexionHeader" class="typoLight">Se connecter</a>
+                            <a href="../html/adhesion.html" class="typoLight">Adhérer</a>
+                        </article>
+                        <article id="escale">
+                            <h2 class="typoSemiBold">L’Escale Tiers-Lieu </h2>
+                            <hr>
+                            <div class="text-wrapper ">
+                                <img src="../img/img footer/map-pin.png " alt="icone d 'une épingle de carte routiére">
+                                <div>
+                                    <p class="typoLight"> 1 Avenue Pasteur </p>
+                                    <p class="typoLight">33480 CASTELNAU-DE-MEDOC</p>
+                                </div>
+                            </div>
+                            <div class="text-wrapper">
+                                <img src="../img/img footer/phone.png" alt="icone d'un téléphone ">
+                                <p class="typoLight">05 57 09 11 40</p>
+                            </div>
+                            <div class="text-wrapper ">
+                                <img src="../img/img footer/globe.png " alt="icone d 'un globe">
+                                <p class="typoLight">contact@lescale-tierlieu.fr</p>
+                            </div>
+                            <div class="text-wrapper">
+                                <img src="../img/img footer/email.png" alt="icone d'un globe">
+                                <p class="typoLight">escale.tierslieu@gmail.com</p>
+                            </div>
+                            <div class="text-wrapper">
+                                <img src="../img/img footer/three-o-clock-clock.png" alt="icone d'un globe">
+                                <p class="typoLight">Ouvert 7j/7 - Permanence les mardis de 14h00 à 18h00</p>
+                            </div>
+                            <hr>
+                            <div id="social-links">
+                                <a href="https://www.facebook.com/escale.tierslieu" target="_blank"><img src="../img/img footer/facebook.png" alt="Logo facebook de L’Escale Tiers-Lieu"></a>
+                                <a href="https://www.instagram.com/escale.tierslieu/?hl=fr" target="_blank"><img src="../img/img footer/linkedin.png" alt="Logo linkedin de L’Escale Tiers-Lieu"></a>
+                                <a href="https://www.linkedin.com/company/l-escale-tiers-lieu/" target="_blank"><img src="../img/img footer/instagram.png" alt="Logo instagram de L’Escale Tiers-Lieu"></a>
+                            </div>
+                        </article>
+                        <article id="site-map">
+                            <h2 class="typoSemiBold">Notre Association</h2>
+                            <hr>
+                            <a href="../../index.html#missionAssociation" class="typoLight">Notre mission</a>
+                            <a href="../html/charte.html" class="typoLight">La charte</a>
+                            <a href="../html/events.html" class="typoLight">Evènements</a>
+                        </article>
+                    </section>
+                    <section id="footer-footer">
+                        <div>
+                            <p class="typoLight">© 2022 L'Escale Tous droits réservés.</p>
+                        </div>
+                        <div>
+                            <a class="typoLight" href="#" id="ml">Mentions légales</a>
+                            <a class="typoLight" href="#">Conditions générales d'utilisations</a>
+                        </div>
+                    </section>
+                </footer>
+            </article>
+        </section>
+    </footer>
+                  <script src="../../ngscript.js"></script>
+      <script src="../js/contact/contact.js"></script>
+    </body>
+  </html>

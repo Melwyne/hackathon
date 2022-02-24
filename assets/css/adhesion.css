@@ -27,7 +27,7 @@ header{
     border-radius: 15px;
     /*met une ombre sur ma boite(horizontal/verticale/adoucissement/couleur)*/
     box-shadow: 3px 3px 25px rgb(214, 214, 214);
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(224, 224, 224);
     position: relative;
 }
 /*permet de faire apparaitre/disparaitre le formulaire lorsqu'on lit la charte*/
@@ -262,7 +262,7 @@ form > input:nth-child(7){
     text-align: center;
 }
 .imgAdh{
-    width: 700px;
+    width: 500px;
 }
 .connectColorAdh{
     color: var(--primaire)!important;

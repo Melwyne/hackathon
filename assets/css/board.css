@@ -15,7 +15,9 @@ a{
 .iconBoard{
     width: 30px;
 }
-
+.iconBoardFleche{
+    padding-top: 7px;
+}
 .logoBoard{
     width: 120px;
 }
@@ -245,7 +247,7 @@ a{
 }
 .newAdherents > a{
     color: blue;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
     border-top: solid 1px rgb(223, 223, 223);
     width: 100%;
