@@ -34,7 +34,7 @@ login.addEventListener("click", (e) => {
     form = document.querySelector("form");
     form.addEventListener("submit", () => {
         if (email.value == "test@test.fr" && password.value == "admin") {
-            alert("Vous étes bien connecté");
+            alert("Vous êtes bien connectés.");
             connection.innerHTML = `                
                 <ul class="navbar-nav mx-3" id="list-connect">
                     <li class="btn btn-light nav-item mx-2 text-center justify-content-center" id="login"> <a class="nav-link calendar" href="https://calendar.google.com/calendar/u/0/r ">25/02/2022<i class="fas fa-calendar-alt mx-1"></i></a></li>
@@ -42,10 +42,10 @@ login.addEventListener("click", (e) => {
                         <a class="nav-link adherer " id="admin" >Admin</a>                        
                             <div class="list-group" id="sideMenu">
                                 <a href="#" class="list-group-item list-group-item-action " aria-current="true">
-                                Tableau de Bord
+                                Tableau de bord
                                 </a>
-                                <a href="#" class="list-group-item list-group-item-action">Mon Agenda</a>
-                                <a href="index.html" class="list-group-item list-group-item-action">Se Deconnecter</a>
+                                <a href="#" class="list-group-item list-group-item-action">Mon agenda</a>
+                                <a href="index.html" class="list-group-item list-group-item-action">Se déconnecter</a>
                             </div>                      
                     </li>
                 </ul> 
