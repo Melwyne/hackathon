@@ -1,0 +1,216 @@
+body {
+    box-sizing: border-box;
+}
+
+#list-connect {
+    position: relative;
+}
+
+#sideMenu {
+    position: absolute;
+    top: 60px;
+    right: -30px;
+    visibility: hidden;
+    transition: 0.5s ease-out;
+    z-index: 10000;
+}
+
+#sideMenu.sideToggle {
+    left: 0;
+}
+
+.header {
+    width: 100vh;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+.nav-social {
+    display: flex;
+    text-decoration: none;
+}
+
+.nav-social li {
+    text-decoration: none;
+}
+
+.btn-primary {
+    border-radius: 150px!important;
+}
+
+.btn-light {
+    border-radius: 150px!important;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.big-title {
+    font-size: 60px;
+}
+
+.active {
+    border-bottom: 2px solid var(--primaire);
+}
+
+.bg-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 595px;
+    background-image: url("../img/imgPersonne/pexels-anna-nekrashevich-8534089.jpg");
+    filter: opacity(25%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: index -1;
+}
+
+.bg-asso {
+    background-image: url("../img/imgPersonne/accueil");
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*-----------------------Modifs Melwyne----------------------------*/
+
+* {
+    color: #0D0E0F!important;
+}
+
+body {
+    background-color: var(--light)!important;
+}
+
+.colorOfficiel {
+    background-color: var(--primaire)!important;
+    border: var(--primaire)!important;
+}
+
+.secAdhRes {
+    padding: 25px;
+    background-color: var(--light)!important;
+}
+
+.adhRes {
+    display: block;
+    max-width: 700px;
+    margin: 20px auto;
+    color: var(--light)!important;
+}
+
+#statusAssoc {
+    color: var(--primaire)!important;
+}
+
+.cWhite {
+    color: var(--light)!important;
+}
+
+#backgroundOfficiel {
+    margin-bottom: 15px;
+}
+
+.spaceStyle {
+    margin-bottom: 15px;
+}
+.spaceStyle > div{
+    margin: 20px;
+}
+
+.colorVar {
+    color: var(--primaire)!important;
+}
+
+.alignLegend {
+    text-align: center;
+}
+
+.styleIconMateriel {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--light);
+    padding-top: 9px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background-color: var(--primaire)!important;
+    border: var(--primaire)!important;
+}
+.colorVarPrimary{
+    color: var(--primaire)!important;
+}
+.adhererReserver{
+    background-color: var(--primaire);
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.adhResTitle{
+    color: var(--light)!important;
+}
+.displayBtnAdhRes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 350px;
+}
+.btnAdhRes{
+    background-color: var(--light);
+    width: 150px;
+    border-radius: 25px;
+    height: 35px;
+    text-align: center;
+    padding-top: 4px;
+    margin: 8px auto;
+    transition: 0.3 all;
+    border: solid 2px transparent;
+}
+.btnAdhRes:hover{
+    border: 2px solid var(--light);
+    background-color: var(--primaire);
+    color: var(--light);
+}
+.plusDinspi{
+    font-size: 20px;
+}
+@media screen and (max-width: 750px){
+    .dNoneEspace{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: flex;
+        float: none;
+        vertical-align: top;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}

@@ -1,0 +1,220 @@
+/* style bouton reserver salle principale haut de page */
+
+#btn-acceuil.reservio-booking-button a {
+    font-size: 25px !important;
+    line-height: 31px !important;
+}
+
+.presta-main{
+    background-color: #F2F2F1;
+}
+
+.presta-content-wrapper{
+    background-color: #41AAC1 ;
+    color: #F2F2F1 !important;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-bottom: 70px;
+}
+    
+.presta-content-wrapper h2{
+    color: #F2F2F1 !important;
+}
+.presta-content-wrapper h4{
+    color: #F2F2F1 !important;
+}
+.presta-content-wrapper p{
+    color: #F2F2F1 !important;
+}
+
+.presta-title-wrapper, 
+.presta-salles-wrapper{
+    max-width: 1020px;
+}
+
+.presta-title-wrapper{
+    text-align: center;
+    color: #F2F2F1 !important;
+}
+
+.presta-title-wrapper h2{
+    font-size: 52px;
+    font-weight: bold;
+    letter-spacing: 0.73px;
+
+    padding-top: 50px;
+    margin-bottom: 18px;
+}
+
+.presta-title-wrapper h3{
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.presta-salles-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.presta-salles-wrapper img{
+    width: 100%;
+}
+
+.salles-gauche,.salles-droites{
+    max-width: 450px;
+    width: 50%;
+    margin-inline: 40px;
+}
+
+.salle hr{
+    border-top: 2px solid #a0eeff9d
+}
+
+.salle h4{
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.salle img{
+    margin-bottom: 0px;
+}
+
+.reservio-booking-button{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.reservio-booking-button a{
+    color:#41AAC1 !important ;
+    background: white !important;
+    border-color: #41AAC1 !important;
+}
+
+.reservio-booking-button a:hover{
+    color:white !important ;
+    background: #41AAC1 !important;
+    border-color: white !important;
+}
+
+.btn-large .btn-book {
+    font-size: 15px;
+    height: 33px;
+    line-height: 32px;
+    padding-inline: 15px !important;
+    border-radius: 100px;
+    
+}
+
+#prestaAux{
+    text-align: center;
+}
+
+/* Deuxieme section  */
+
+.presta-benef-wrapper{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white
+}
+
+.salles-gauche,.salles-droites{
+    margin-inline: 10px;
+    width: 80%;
+}
+
+.presta-benef{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1020px;
+    width: 100%;
+}
+
+.benef{
+    max-width: 170px;
+    width: 30%;
+    margin-inline: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+}
+
+.benef h2{
+    margin-bottom: 75px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.cercle-benef{
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-color: #41AAC1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cercle-benef img{
+    width: 60%;
+}
+
+/*
+================================================
+ Media queries 
+ =================================================
+ */
+
+ @media (max-width: 500px) { 
+     .presta-main{
+         text-align: center;
+     }
+
+    .presta-salles-wrapper{
+        flex-direction: column;
+    }
+
+    .presta-benef{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benef{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .benef h2{
+        margin-bottom: 75px;
+        font-size: 20px;
+        text-align: center;
+        padding: 15px;
+    }
+ }
+
+ /*--------------------------------modifs Melwyne-------------------------------*/
+ .colorBtnAdherer{
+     background-color: var(--primaire)!important;
+     border: var(--primaire);
+ }
+ .opCuisine{
+     margin-top: 10px;
+ }
+.tailleImgInstall{
+    font-size: 50px;
+    filter: invert(1);
+}

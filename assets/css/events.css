@@ -1,0 +1,104 @@
+*{
+    color: var(--dark);
+}
+.titleEventHeader{
+    font-size: 50px;
+}
+.soustitleEventHeader{
+    font-size: 22px;
+}
+.headerEvents{
+    font-weight: bold;
+    font-size: 50px;
+    color: var(--primaire)!important;
+}
+.introEvents{
+    width: 400px;
+    text-align: center;
+    margin-top: 10px;
+}
+.sectionEvents{
+    padding: 20px 0;
+    border-bottom: solid 1px rgb(209, 209, 209);
+}
+.titleEvents{
+    /*Je centre mon titre au milieu de la page et lui met des marges haut-bas*/
+    text-align: center;
+    margin: 15px auto;
+    /*Bordure en bas du titre*/
+    border-bottom: solid 1px rgb(139, 139, 139);
+    /*taille au titre*/
+    width: 290px;
+    padding-bottom: 3px;
+}
+/*class qui englobe tous mes évènements*/
+.events{
+    /*centrer sur la vertical et espacé sur l'horizontal*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*permet d'aller à la ligne quand plus de place*/
+    flex-wrap: wrap;
+    /*centrer au milieu de la page*/
+    margin: 0 auto;
+    width: 1100px;
+}
+/*class sur toutes les infos écrites*/
+.eventsInfo{
+    text-align: center;
+    width: 344px;
+    height: 150px;
+    margin: 10px;
+    border: solid 1px var(--dark)!important;
+    border-radius: 10px;
+    background-color: var(--light);
+    transition: 0.3s all;
+}
+.eventsInfo:hover{
+    background-color: rgb(216, 216, 216);
+}
+/*Première ligne en couleur*/
+.eventsInfo > span:nth-child(1){
+    color: var(--primaire)!important;
+    font-size: 14px;
+    margin: 10px 0;
+}
+.eventsInfo h3{
+    /*taille à mon titre*/
+    font-size: 14px;
+    /*bordure en bas*/
+    border-bottom: solid 1px grey;
+    padding-bottom: 4px;
+}
+/*afficher un pointeur sur chaque article*/
+.flexColumn{
+    cursor: pointer;
+    border: solid 1px transparent;
+}
+
+/*réduire taille de ma class en fonction des tailles des écrans*/
+@media screen and (max-width: 1100px){
+    .events{
+        width: 800px;
+    }
+}
+@media screen and (max-width: 800px){
+    .events{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 600px){
+    .events{
+        width: 375px;
+    }
+    .events img{
+        display: none;
+    }
+    .events > article{
+        margin: 20px 0;
+        border: solid 1px var(--dark);
+        padding: 10px;
+        background-color: var(--light);
+        border-radius: 10px;
+    }
+}

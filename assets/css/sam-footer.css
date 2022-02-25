@@ -1,0 +1,219 @@
+
+footer{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer img,a{
+    display: block;
+}
+
+#footer-main{
+    background-color: #F2F2F1;
+    padding: 106px 142px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-main article{
+    margin-inline: 10px;
+}
+
+.text-wrapper{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.text-wrapper p{
+ margin: 0%;
+}
+
+.text-wrapper div p{
+    margin: 3px;
+
+}
+
+.text-wrapper img{
+    margin-right: 10px;
+    height: 18px;
+}
+
+#social-links{
+    margin-top: 15px;
+    display: flex;
+}
+
+#social-links img{
+width: 48px;
+margin-right: 28px;
+}
+
+#social-links img:hover{
+    width: 45px;
+    margin-right: 31px;
+}
+
+#site-map a{
+    margin-bottom: 24px;
+    font: normal normal 600 18px/24px;
+    letter-spacing: 0px;
+}
+
+#site-map a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#footer-footer{
+    background-color: #4525F2;
+    padding: 30px 142px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+#footer-footer div {
+    display: flex;
+}
+
+#footer-footer a,p{
+    font: normal normal medium 13px/19px;
+    letter-spacing: 0.39px;
+}
+
+#footer-footer a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#ml{
+    margin-right: 60px;
+}
+
+
+/*
+================================================
+ Media queries 
+ =================================================
+ */
+
+ @media (max-width: 750px) { 
+    #footer-main {
+        padding: 20px;
+    }
+    #footer-footer {
+        padding: 20px;
+    }
+ }
+
+ @media (max-width: 630px) { 
+    #footer-main hr{
+        display:none
+    }
+
+    #footer-main article{
+        margin-bottom: 40px;
+    }
+
+    #footer-main h2{
+        font-size: 1.2rem;
+    }
+
+    #footer-main{
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #escale{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #escale img{
+        display: none
+    }
+
+    #social-links img{
+        display: block;
+        margin: 0;
+        margin-inline: 5px;
+    }
+
+    #site-map a {
+        margin-bottom: 0px;
+    }
+
+    #footer-footer {
+        padding: 20px;
+        flex-direction: column-reverse;
+    }
+
+    #footer-footer p{
+        margin-top: 50px ;
+    }
+    
+ }
+
+
+ /*--------------------------------Modifs Melwyne-------------------------------*/
+*{
+    color: #0D0E0F!important;
+}
+:root{
+    --dark: #0D0E0F;
+    --light: #F2F2F1;
+    --primaire: #41AAC1;
+}
+a{
+    color: #0D0E0F;
+}
+
+#btnHero{
+    margin-top: 40px;
+}
+
+#btnHero:hover{
+    background-color: #F2F2F1 !important;
+}
+
+#linkHero:hover{
+    color: #41AAC1 !important;
+}
+/* .content-wrapper-sam{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 600px;
+    padding: 20px;
+    background-color: #41AAC1;
+} */
+.content-wrapper-sam > h2{
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+    color: var(--light)!important;
+}
+#footer-footer{
+    background-color: #41AAC1!important;
+}
+footer{
+    background-color: #F2F2F1!important;
+}
+.partenaires{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+}
+.imgPartenaires{
+    width: 150px;
+}

@@ -1,12 +1,311 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>L'escale | Accueil</title>
+    <link rel="stylesheet" href="assets/css/librairie.css">
+    <link rel="stylesheet" href="assets/css/ngStyle.css">
+    <link rel="stylesheet" href="assets/css/prestations.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="./assets/css/adherents.css">
+    <link rel="stylesheet" href="assets/css/sam-footer.css">
+    <link rel="icon" href="assets/img/logoIconOnglet">
 </head>
+
 <body>
-    
+    <header id="connexionHeader">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-between align-content-center fixed-top">
+            <a class="navbar-brand" href="index.html"><img class="logo" src="assets/img/logoOffi" alt="l'escale Tiers-lieu Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center align-content-center col-sm-8 typoMedium" id="navbarNav">
+                <ul class="navbar-nav mx-3">
+                    <li class="nav-item active ">
+                        <a class="nav-link text-center" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item text-black ">
+                        <a class="nav-link text-center" href="assets/html/prestations.html">Prestations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="assets/html/events.html">Evènements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="assets/html/contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item sr-only-focusable">
+                        <a class="nav-link disabled" href="#">Agenda</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex flex-row justify-content-center align-content-center mx-3">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="https://www.facebook.com/escale.tierslieu" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="https://www.instagram.com/escale.tierslieu/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="https://www.linkedin.com/company/l-escale-tiers-lieu/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+                <div id="connection">
+                    <ul class="navbar-nav mx-3" id="list-connect">
+                        <li class="btn nav-item btn-light nav-item mx-2 my-2 py-1 px-3 text-center justify-content-center" id="login"> <a class="seConnecter" href="# ">Se connecter</a></li>
+                        <li class="btn nav-item btn-primary nav-item mx-2 my-2 py-1 px-3 colorOfficiel" id="adhesion">
+                            <a class="adherer cWhite" href="assets/html/adhesion.html" target="_blank">Adhérer</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-header ">
+
+        </div>
+        <div class="caption text-center">
+            <div class="big-title upper">
+                <h1 class="typoSemiBold colorVar">Besoin d'un bureau ?</h1>
+            </div>
+            <div class="sub-big-title d-flex justify-content-center flex-column align-content-center ">
+                <p class="typoMedium plusDinspi">Réservez une salle dès maintenant grâce à la reservation en ligne.</p>
+                <p class="typoMedium plusDinspi">Accessible dès maintenant du lundi au dimanche</p>
+            </div>
+            <div id="btnHero" class="btn btn-primary upper justify-content-center px-3 colorOfficiel">
+                <a id="linkHero" class="list list-group list-group-item-action-primary text-white typoSemiBold" href="http://bookings.reservio.com/modal/yjtfDXJeaR/?backlink=http%3A%2F%2F127.0.0.1%3A5500%2Fassets%2Fhtml%2Fprestations.html">Reserver maintenant !</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bgImg">
+            <div class="container mt-5">
+                <div class="row line-red p-5" id="missionAssociation">
+                    <div class="col-lg-6 sm-12">
+                        <h2 class="h1 typoMedium">L'association</h2>
+                        <div class="presentation mt-5">
+                            <p class="typoMedium">L’Escale Tiers-Lieu est un espace de travail partagé et collaboratif de type coworking qui peut accueillir tous types de travailleurs (indépendants, télétravailleurs, salariés, centre de formation …).
+                            </p>
+                            <p class="typoMedium">
+                                Il permet de travailler à distance dans un environnement coopératif qui améliore la mise en réseau et le croisement des initiatives.
+                            </p>
+                            <p class="typoMedium">
+                                Ce lieu convivial à également pour ambition d’être un tremplin à la création et au développement économique, social et culturel sur le territoire médocain.
+                            </p>
+                            <p class="typoMedium">
+                                La gestion de ce lieu de vie collective est organisée sur un mode associatif. L’association L’Escale Tiers-Lieu a été créée lors de son assemblée générale constitutive le 05 septembre 2018.
+                            </p>
+                        </div>
+                        <div class="statuts">
+                            <a id="statusAssoc" class="typoLight" href="mailto:escale.tierslieu@gmail.com?subject=Statuts de l'association&body=Bonjour, pouvez-vous m'envoyer les status de l'association. Merci!">Statuts de l'association ici.</a>
+                        </div>
+                        <div class="adherer my-4">
+                            <button class="btn btn-primary nav-item colorOfficiel" id="adhesion">
+                                <a class="nav-link adherer text-white typoMedium" href="assets/html/adhesion.html" target="_blank">Adhérer</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 sm-12 bg-asso">
+                    </div>
+                </div>
+            </div>
+            <section class="dNoneEspace">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="title-space text-center">
+                                <h2 class="h1 typoMedium">L'espace</h2>
+                            </div>
+                            <p class="text-center typoSemiBold">
+                                Ce lieu répond aux différentes demandes de ses utilisateurs ! <br> Vous y retrouvez plusieurs salles et bureaux selon l’usage.
+                            </p>
+
+                            <div class="card-container d-flex flex-wrap justify-content-center mt-5 spaceStyle">
+                                <div style="width: 18rem;">
+                                    <img class="card-img-top" src="assets/img/imgPersonne/three" alt="Card image cap">
+                                    <div class="card-body alignLegend typoMedium">
+                                        <h5 class="card-title typoSemiBold">UN BUREAU EFFICACE ET CONVIVIALE</h5>
+                                    </div>
+                                </div>
+
+                                <div style="width: 18rem;">
+                                    <img class="card-img-top" src="assets/img/imgPersonne/femme" alt="Card image cap">
+                                    <div class="card-body alignLegend typoMedium">
+                                        <h5 class="card-title typoSemiBold">ENTREPRENARIAT DYNAMIQUE ET LOCALE</h5>
+                                    </div>
+                                </div>
+                                <div style="width: 18rem;">
+                                    <img class="card-img-top" src="assets/img/imgPersonne/two" alt="Card image cap">
+                                    <div class="card-body alignLegend typoMedium">
+                                        <h5 class="card-title typoSemiBold">TRAVAIL, COLLABORATION, ECHANGE</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        
+        <!------------------    ⬇ Debut de la section adherents ⬇    ------------------->
+        <div class="content-wrapper-sam">
+            <h2 class="typoMedium">Ils nous font confiance, les adhérents de l'Escale :</h2>
+            <div class="adherents-wrapper masquer">
+
+            </div>
+            
+            <button id="voir-tout" class="typoMedium">Afficher/masquer les adhérents</button>
+        </div>
+        <!------------------   ⬆ fin de la section adherents ⬆    ------------------->
+        <!---------------------------------- fin section 1  ----------------------->
+        <section class="colorOfficiel">
+            <div class="presta-benef-wrapper">
+                <div class="presta-benef">
+                    <article class="benef">
+                        <div class="cercle-benef">
+                            <span class="iconify tailleImgInstall" data-icon="iconoir:internet"></span>
+                        </div>
+                        <h2 class="typoMedium colorVarPrimary">INTERNET FIBRE OPTIQUE</h2>
+                    </article>
+                    <article class="benef">
+                        <div class="cercle-benef">
+                            <span class="iconify tailleImgInstall" data-icon="mdi:sofa-single-outline"></span>
+                        </div>
+                        <h2 class="typoMedium colorVarPrimary">ESPACE DETENTE</h2>
+                    </article>
+                    <article class="benef">
+                        <div class="cercle-benef">
+                            <span class="iconify tailleImgInstall" data-icon="bi:printer"></span>
+                        </div>
+                        <h2 class="typoMedium colorVarPrimary">IMPRIMANTE PHOTOCOPIE</h2>
+                    </article>
+                </div>
+                <div class="presta-benef">
+                    <article class="benef">
+                        <div class="cercle-benef">
+                            <span class="iconify tailleImgInstall" data-icon="icon-park-outline:transaction-order"></span>
+                        </div>
+                        <h2 class="typoMedium colorVarPrimary">DURABLE</h2>
+                    </article>
+                    <article class="benef">
+                        <div class="cercle-benef">
+                            <span class="iconify tailleImgInstall" data-icon="bi:projector"></span>
+                        </div>
+                        <h2 class="typoMedium colorVarPrimary">VIDEO PROJECTEUR</h2>
+                    </article>
+                    <article class="benef">
+                        <div class="cercle-benef">
+                            <span class="iconify tailleImgInstall" data-icon="icon-park-outline:green-house"></span>
+                        </div>
+                        <h2 class="typoMedium colorVarPrimary">PRESTATION SUR MESURE</h2>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------- fin section 2  ----------------------->
+        <section class="adhererReserver">
+            <div class="title-ad text-center mt-3">
+                <h2 class="h1 typoSemiBold adhResTitle">Adhérer, Réserver...</h2>
+            </div>
+            <div class="defileParent text-center adhRes typoMedium">
+                Adhérer à L’Escale, c’est d’abord adhérer à un état d’esprit emprunt de partage et de cohésion. C’est ensuite pouvoir accéder à l’ensemble des services proposés selon des conditions très avantageuses. L’adhésion annuelle n’est que de 15 € !
+                </span>
+            </div>
+            <div class="displayBtnAdhRes">
+            <a class="btnAdhRes typoLight" href="assets/html/adhesion.html">Adhérer</a>
+            <a class="btnAdhRes typoLight" href="https://test1576.reservio.com/booking/business/service?backlink=http%3A%2F%2F127.0.0.1%3A5500%2Fassets%2Fhtml%2Fprestations.html&businessId=122cf4bd-f5f8-47d4-9674-97ea968eae29">Réserver une salle</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="footer-main ">
+            <article>
+                <article>
+                    <footer>
+                        <section id="footer-main">
+                            <article id="site-map">
+                                <h2 class="typoSemiBold">Compte</h2>
+                                <hr>
+                                <a href="#connexionHeader" class="typoLight">Se connecter</a>
+                                <a href="assets/html/adhesion.html" class="typoLight">Adhérer</a>
+                            </article>
+                            <article id="escale">
+                                <h2 class="typoSemiBold">L’Escale Tiers-Lieu </h2>
+                                <hr>
+                                <div class="text-wrapper ">
+                                    <img src="assets/img/img footer/map-pin.png " alt="icone d 'une épingle de carte routiére">
+                                    <div>
+                                        <p class="typoLight"> 1 Avenue Pasteur </p>
+                                        <p class="typoLight">33480 CASTELNAU-DE-MEDOC</p>
+                                    </div>
+                                </div>
+                                <div class="text-wrapper">
+                                    <img src="assets/img/img footer/phone.png" alt="icone d'un téléphone ">
+                                    <p class="typoLight">05 57 09 11 40</p>
+                                </div>
+                                <div class="text-wrapper ">
+                                    <img src="assets/img/img footer/globe.png " alt="icone d 'un globe">
+                                    <p class="typoLight">contact@lescale-tierlieu.fr</p>
+                                </div>
+                                <div class="text-wrapper">
+                                    <img src="assets/img/img footer/email.png" alt="icone d'un globe">
+                                    <p class="typoLight">escale.tierslieu@gmail.com</p>
+                                </div>
+                                <div class="text-wrapper">
+                                    <img src="assets/img/img footer/three-o-clock-clock.png" alt="icone d'un globe">
+                                    <p class="typoLight">Ouvert 7j/7 - Permanence les mardis de 14h00 à 18h00</p>
+                                </div>
+                                <hr>
+                                <div id="social-links">
+                                    <a href="https://www.facebook.com/escale.tierslieu" target="_blank"><img src="assets/img/img footer/facebook.png" alt="Logo facebook de L’Escale Tiers-Lieu"></a>
+                                    <a href="https://www.instagram.com/escale.tierslieu/?hl=fr" target="_blank"><img src="assets/img/img footer/linkedin.png" alt="Logo linkedin de L’Escale Tiers-Lieu"></a>
+                                    <a href="https://www.linkedin.com/company/l-escale-tiers-lieu/" target="_blank"><img src="assets/img/img footer/instagram.png" alt="Logo instagram de L’Escale Tiers-Lieu"></a>
+                                </div>
+                            </article>
+                            <article id="site-map">
+                                <h2 class="typoSemiBold">Notre Association</h2>
+                                <hr>
+                                <a href="#missionAssociation" class="typoLight">Notre mission</a>
+                                <a href="assets/html/charte.html" class="typoLight">La charte</a>
+                                <a href="assets/html/events.html" class="typoLight">Evènements</a>
+                            </article>
+                        </section>
+                        
+                    <section class="partenaires">
+                        <img class="imgPartenaires" src="assets/img/partenaires/campus" alt="Logo du Campus du Lac">
+                        <img class="imgPartenaires" src="assets/img/partenaires/castelnau" alt="Logo de CASTELNAU-DE-MEDOC">
+                        <img class="imgPartenaires" src="assets/img/partenaires/coop" alt="Logo de la coopérative Tiers-lieu">
+                        <img class="imgPartenaires" src="assets/img/partenaires/credit mutuel" alt="Logo du Crédit Mutuel">
+                        <img class="imgPartenaires" src="assets/img/partenaires/gironde" alt="Logo de la Gironde">
+                        <img class="imgPartenaires" src="assets/img/partenaires/medoc" alt="Logo du Medoc Tiers-Lieu">
+                        <img class="imgPartenaires" src="assets/img/partenaires/medulienne" alt="Logo de la communauté de commune Medulienne">
+                        <img class="imgPartenaires" src="assets/img/partenaires/nouvelle aquitaine" alt="Logo de la Nouvelle-Aquitaine">
+                        <img class="imgPartenaires" src="assets/img/partenaires/parc" alt="Logo du parc naturel regional du Médoc">
+                        <img class="imgPartenaires" src="assets/img/partenaires/sb" alt="Logo de SB Mes Docs">
+                    </section>
+                    <section id="footer-footer">
+                        <div>
+                            <p class="typoLight">© 2022 L'Escale Tous droits réservés.</p>
+                        </div>
+                        <div>
+                            <a class="typoLight" href="#" id="ml">Mentions légales</a>
+                            <a class="typoLight" href="#">Conditions générales d'utilisations</a>
+                        </div>
+                    </section>
+                </footer>
+            </article>
+        </section>
+    </footer>
+    <script type="module" src="./assets/js/page adherents/adherents-html.js"></script>
+    <script type="module" src="./assets/js/page adherents/adherents-html-handler.js"></script>
+    <script src="ngscript.js"></script>
 </body>
 </html>
