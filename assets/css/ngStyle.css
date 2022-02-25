@@ -63,9 +63,9 @@ body {
     left: 0;
     width: 100%;
     height: 595px;
-    background-image: url("../img/bg-header.png");
-    filter: opacity(38%);
-    background-position: 0% 35%;
+    background-image: url("../img/imgPersonne/pexels-anna-nekrashevich-8534089.jpg");
+    filter: opacity(25%);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: index -1;
@@ -194,6 +194,9 @@ body {
     border: 2px solid var(--light);
     background-color: var(--primaire);
     color: var(--light);
+}
+.plusDinspi{
+    font-size: 20px;
 }
 @media screen and (max-width: 750px){
     .dNoneEspace{
