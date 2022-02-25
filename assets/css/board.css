@@ -146,6 +146,7 @@ a{
 .articleBoard{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     margin: 20px 0;
 }
 .chiffreBoard{
@@ -153,6 +154,7 @@ a{
     width: 280px;
     border-radius: 7px;
     padding: 15px;
+    margin: 10px;
     box-shadow: 4px 4px 40px rgb(231, 231, 231);
 }
 .chiffreBoard > h2{
@@ -262,4 +264,26 @@ a{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1400px){
+    .mainBoard{
+        display: none;
+    }
+    .headerBoard > div > a{
+        display: none;
+    }
+    .dNone{
+        display: block!important;
+        background-color: var(--primaire);
+        color: var(--light);
+        width: 80%;
+        border-radius: 25px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .msgdNone{
+        font-size: 40px;
+        padding: 15px;
+    }
 }
