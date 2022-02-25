@@ -11,7 +11,7 @@
 
 .presta-content-wrapper{
     background-color: #41AAC1 ;
-    color: #F2F2F1;
+    color: #F2F2F1 !important;
 
     display: flex;
     flex-direction: column;
@@ -21,6 +21,15 @@
     padding-bottom: 70px;
 }
     
+.presta-content-wrapper h2{
+    color: #F2F2F1 !important;
+}
+.presta-content-wrapper h4{
+    color: #F2F2F1 !important;
+}
+.presta-content-wrapper p{
+    color: #F2F2F1 !important;
+}
 
 .presta-title-wrapper, 
 .presta-salles-wrapper{
@@ -29,6 +38,7 @@
 
 .presta-title-wrapper{
     text-align: center;
+    color: #F2F2F1 !important;
 }
 
 .presta-title-wrapper h2{
@@ -114,7 +124,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--light);
+    background-color: white
 }
 
 .salles-gauche,.salles-droites{
