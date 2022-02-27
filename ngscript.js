@@ -1,6 +1,4 @@
 const navbar = document.querySelector(".navbar");
-const seConnecter = document.querySelector("seConnecter");
-const adherer = document.querySelector("adherer");
 const btnTog = document.querySelector(".navbar-toggler");
 
 //changement du background au scroll
